@@ -95,20 +95,36 @@ La extracción compara catorce campos por PDF con `datos/clave_aptitud.json`; la
 
 | Configuración | Corrección | Fuente | Abstención (8) | Falsa abstención (16) | USD agente + memoria | USD juez | Latencia media s |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| B-claude | 100.00% | 93.75% | 100.00% | 0.00% | 0.033999 | 0.003809 | 6.34 |
-| A-claude | 95.83% | 93.75% | 87.50% | 0.00% | 0.038767 | 0.003642 | 5.81 |
-| C-local | 33.33% | 0.00% | 100.00% | 93.75% | 0.000000 | 0.003493 | 1.25 |
+| B-claude | 95.83% | 93.75% | 100.00% | 0.00% | 0.035452 | 0.003996 | 5.04 |
+| A-claude | 91.67% | 81.25% | 87.50% | 6.25% | 0.036906 | 0.003826 | 5.16 |
+| C-local | 33.33% | 0.00% | 100.00% | 87.50% | 0.000000 | 0.003683 | 2.23 |
 
-**Extracción Claude: 279/280 campos (99,64 %), USD 0,009803**, 55.865 tokens de entrada, 8.435 de salida y 116,19 s. La extracción local adicional se omitió.
+**Extracción Claude: 279/280 campos (99,64 %), USD 0,009803**, 55.865 tokens de entrada, 8.435 de salida y 116,19 s. La extracción no se volvió a medir; se reutilizaron sus checkpoints. El desacuerdo sigue siendo `experience_by_similar_object` en `02_CD_55_2021_3516.pdf`. La extracción local adicional se omitió.
 
-Se recomienda **B-Claude** para esta entrega: respondió los 16 casos presentes y se abstuvo en los ocho ausentes. Ollama redujo latencia y precio por token, pero falló en las 16 preguntas respondibles (15 con el prefijo de abstención y una alegando ausencia sin ese prefijo). A-Claude tuvo un error de límite de pasos; una sola ejecución no demuestra causalidad del guard.
+Se recomienda **B-Claude** para esta entrega: obtuvo **23/24** respuestas correctas, 15/16 fuentes esperadas y ocho abstenciones correctas. Su único fallo, q05, comienza «Sí» y luego afirma «no se exige» la constitución de garantías: se conserva como respuesta contradictoria e incorrecta. A-Claude obtuvo **22/24**: q10 fue una falsa abstención y q20 agotó el límite de pasos con respuesta vacía. Una sola ejecución no demuestra una mejora causal del guard.
 
-Auditoría: un veredicto contradictorio del juez para C-local/q22 se revisó una sola vez, sin repetir el agente. El JSON conserva el juicio original y ambos costes.
+C-local obtuvo **8/24**, los ocho casos ausentes; falló los 16 respondibles, con 14 falsas abstenciones (87,50 %) y dos respuestas incorrectas sin el prefijo de abstención. Una calculó un porcentaje ajeno al requisito (q08); otra alegó falta de datos con cita MCP (q09). No acertó ninguna fuente PDF. Su latencia media de **2,23 s** y coste por token cero no compensan la calidad observada. Solo se evaluó Qwen 2.5 3B con este prompt y estas herramientas.
 
-Resultados completos: [RAG](resultados/evaluacion_rag.md), [extracción](resultados/extraccion_requisitos.md). [Proyecto LangSmith](https://smith.langchain.com/o/be862a28-1dbf-4dec-b6c4-f58119a8f835/projects/p/6f480c7b-d861-4a8b-af41-8211bf4a1efc).
+La ejecución vigente no contiene revisiones dirigidas del juez (`judge_audits: []`).
+
+Resultados completos: [RAG](resultados/evaluacion_rag.md), [extracción](resultados/extraccion_requisitos.md).
 <!-- RESULTS:END -->
 
 El coste local por token es cero según `secop_agent.costs`; no incluye energía ni hardware. Los costes Claude usan la tabla del proyecto, no una factura conciliada. El fixture también se usó para calibrar la recuperación: una nota alta aquí no mide generalización a pliegos nuevos.
+
+## Evidencias LangSmith
+
+[Mediciones y trazas verificadas](resultados/evidencia_langsmith.md): estadísticas del proyecto, comparación con CostCounter y enlaces a los tres experimentos y a las trazas originales. Regenerar con `uv run python scripts/langsmith_evidence.py`; requiere acceso a LangSmith y no llama al LLM. Los experimentos publican salidas desde checkpoints: su latencia de publicación no mide inferencia. Las trazas originales muestran el consumo del agente.
+
+Las cuatro capturas las añadirá el usuario siguiendo [la guía](docs/evidencias/README.md). Los enlaces siguientes quedan preparados; las imágenes aún están pendientes:
+
+![Proyecto LangSmith: ejecuciones con tokens, coste y latencia](docs/evidencias/langsmith_proyecto.png)
+
+![Traza citada: búsqueda documental y herramienta MCP](docs/evidencias/langsmith_traza_citas.png)
+
+![Traza con abstención No lo sé](docs/evidencias/langsmith_traza_no_lo_se.png)
+
+![Comparación de los tres experimentos](docs/evidencias/langsmith_experimentos.png)
 
 ## Estructura
 

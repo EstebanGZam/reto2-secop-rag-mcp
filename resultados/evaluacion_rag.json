@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T21:04:49.792458+00:00",
+  "generated_at": "2026-10-28T21:09:54.852612+00:00",
   "fingerprint": "976e2a00e89a14150a309d890262fc3c518a2d265564798848ae3d3e353af4cc",
   "judge_model": "anthropic:claude-haiku-5-5",
   "results": [
@@ -4120,15 +4120,15 @@
     "experiments": [
       {
         "configuration": "B-claude",
-        "experiment": "B-claude-83af1cf3"
+        "experiment": "B-claude-2965150d"
       },
       {
         "configuration": "A-claude",
-        "experiment": "A-claude-815314f1"
+        "experiment": "A-claude-ca03fc28"
       },
       {
         "configuration": "C-local",
-        "experiment": "C-local-20af14b1"
+        "experiment": "C-local-7aba5c18"
       }
     ]
   },
