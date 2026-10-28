@@ -1,0 +1,4150 @@
+{
+  "generated_at": "2026-10-28T20:45:12.436959+00:00",
+  "fingerprint": "976e2a00e89a14150a309d890262fc3c518a2d265564798848ae3d3e353af4cc",
+  "judge_model": "anthropic:claude-haiku-5-5",
+  "results": [
+    {
+      "configuration": "B-claude",
+      "model": "anthropic:claude-haiku-5-5",
+      "guard": true,
+      "questions": [
+        {
+          "id": "q01",
+          "question": "¿Cuál es el presupuesto oficial de EDP-545-2022?",
+          "expected_answer": "$57.333.333 COP",
+          "expected_sources": [
+            "01_EDP_545_2022.pdf"
+          ],
+          "expected_section": "1. Información general del proceso",
+          "answerable": true,
+          "category": "budget",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El precio base de EDP-545-2022 es de COP 57.333.333. Este es el único dato de presupuesto del registro del proceso; la búsqueda en los documentos del proceso no devolvió resultados, así que no pude confirmarlo con el pliego [fuente: datos/secop_muestra.json].",
+          "citations": [
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "d078f2df-6701-4a04-829a-63854db5642f",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5180,
+            "output_tokens": 429,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000732,
+            "cost_complete": true,
+            "latency_s": 8.187519154002075
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "get_process",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 861,
+            "output_tokens": 241,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000207,
+            "cost_complete": true,
+            "latency_s": 4.066240868000023
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 924,
+            "output_tokens": 123,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000154,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the budget as COP 57.333.333, matching the expected $57.333.333 COP. The extra note about not confirming with the pliego is a caveat, not a contradiction, and the value itself is correct."
+        },
+        {
+          "id": "q02",
+          "question": "¿En cuántas cuotas mensuales se paga el contrato de 02_CD_55_2021_3516.pdf?",
+          "expected_answer": "6 cuotas mensuales",
+          "expected_sources": [
+            "02_CD_55_2021_3516.pdf"
+          ],
+          "expected_section": "6. Valor y forma de pago",
+          "answerable": true,
+          "category": "payment",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El contrato se paga en 6 cuotas mensuales, previa presentación del informe de actividades, la certificación de cumplimiento del supervisor y el pago de aportes al sistema de seguridad social. [fuente: 02_CD_55_2021_3516.pdf, p. 2, §6 Valor y forma de pago]",
+          "citations": [
+            "[fuente: 02_CD_55_2021_3516.pdf, p. 2, §6 Valor y forma de pago]"
+          ],
+          "abstained": false,
+          "run_id": "a0c713e4-e950-4622-894a-66dfd3e86f16",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 4696,
+            "output_tokens": 187,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000563,
+            "cost_complete": true,
+            "latency_s": 2.4158536639988597
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 02_CD_55_2021_3516.pdf, p. 2, §6 Valor y forma de pago]"
+          ],
+          "tools_used": [
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 903,
+            "output_tokens": 250,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000215,
+            "cost_complete": true,
+            "latency_s": 3.419568586999958
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 950,
+            "output_tokens": 115,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000152,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer states the contract is paid in 6 monthly installments (\"6 cuotas mensuales\"), which matches the reference answer. The extra conditions on payment do not contradict it."
+        },
+        {
+          "id": "q03",
+          "question": "¿Cuál es la fecha de cierre y entrega de ofertas de CO1.REQ.7128715?",
+          "expected_answer": "12 de noviembre de 2024",
+          "expected_sources": [
+            "03_RE_CGBM_049_2024.pdf"
+          ],
+          "expected_section": "4. Cronograma",
+          "answerable": true,
+          "category": "schedule",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "La fecha de cierre y entrega de ofertas es el **12 de noviembre de 2024** [fuente: 03_RE_CGBM_049_2024.pdf, p. 1, §4 Cronograma]. El registro del proceso muestra la misma fecha de recepción [fuente: datos/secop_muestra.json].",
+          "citations": [
+            "[fuente: 03_RE_CGBM_049_2024.pdf, p. 1, §4 Cronograma]",
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "77af8012-506a-4b33-b7b2-ebaa9f55b500",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5470,
+            "output_tokens": 343,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000718,
+            "cost_complete": true,
+            "latency_s": 7.188222962999134
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json",
+            "[fuente: 03_RE_CGBM_049_2024.pdf, p. 1, §4 Cronograma]"
+          ],
+          "tools_used": [
+            "get_process",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 895,
+            "output_tokens": 211,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000195,
+            "cost_complete": true,
+            "latency_s": 3.0047802230001253
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 946,
+            "output_tokens": 115,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000152,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answers 12 de noviembre de 2024, matching the reference. The extra citation to a JSON source is a citation matter, which is not judged here, and it does not contradict the reference."
+        },
+        {
+          "id": "q04",
+          "question": "¿Cuántos meses de experiencia profesional requiere CD-CPS-0720-2026?",
+          "expected_answer": "Mínimo 36 meses de experiencia profesional",
+          "expected_sources": [
+            "04_CD_CPS_0720_2026.pdf"
+          ],
+          "expected_section": "4. Perfil e idoneidad requeridos",
+          "answerable": true,
+          "category": "experience",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El proceso CD-CPS-0720-2026 exige un mínimo de 36 meses de experiencia profesional, de los cuales 12 meses deben ser en gestión financiera de contratos o convenios públicos [fuente: 04_CD_CPS_0720_2026.pdf, p. 1, §4 Perfil e idoneidad requeridos].",
+          "citations": [
+            "[fuente: 04_CD_CPS_0720_2026.pdf, p. 1, §4 Perfil e idoneidad requeridos]"
+          ],
+          "abstained": false,
+          "run_id": "c2ff1cd7-9888-4793-aef6-2137e866a5b7",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5397,
+            "output_tokens": 285,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000682,
+            "cost_complete": true,
+            "latency_s": 14.498040383001353
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 04_CD_CPS_0720_2026.pdf, p. 1, §4 Perfil e idoneidad requeridos]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 907,
+            "output_tokens": 275,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000228,
+            "cost_complete": true,
+            "latency_s": 6.3324784110009205
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 967,
+            "output_tokens": 121,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000157,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer states the minimum of 36 months of professional experience, matching the reference. The extra detail about 12 months in public contract financial management is not contradicted by the reference, and citation formatting is ignored."
+        },
+        {
+          "id": "q05",
+          "question": "¿Se exige constitución de garantías en el proceso 5?",
+          "expected_answer": "no se exige la constitución de garantías para este contrato",
+          "expected_sources": [
+            "05_PS_147_2025.pdf"
+          ],
+          "expected_section": "7. Garantías",
+          "answerable": true,
+          "category": "guarantees",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Según el documento 05 (PS-147-2025, Municipio de San Miguel Putumayo), no se exige la constitución de garantías para este contrato, de conformidad con el análisis de riesgos [fuente: 05_PS_147_2025.pdf, p. 2, §7 Garantías].\n\nInterpreté \"proceso 5\" como el quinto documento indexado, PS-147-2025. Si se refería a otro proceso, indíquemelo.",
+          "citations": [
+            "[fuente: 05_PS_147_2025.pdf, p. 2, §7 Garantías]"
+          ],
+          "abstained": false,
+          "run_id": "754c3801-f7ce-4fd9-a2ed-3ad6aeef00aa",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 7514,
+            "output_tokens": 435,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000969,
+            "cost_complete": true,
+            "latency_s": 4.482963637001376
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 01_EDP_545_2022.pdf]",
+            "[fuente: 02_CD_55_2021_3516.pdf]",
+            "[fuente: 03_RE_CGBM_049_2024.pdf]",
+            "[fuente: 04_CD_CPS_0720_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf]",
+            "[fuente: 06_SINF_CPS_050_23.pdf]",
+            "[fuente: 07_135116.pdf]",
+            "[fuente: 08_OC10_2494_2025.pdf]",
+            "[fuente: 09_SDIS_CPS_302405_2024.pdf]",
+            "[fuente: 10_009_2021.pdf]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf]",
+            "[fuente: 12_FNV_001_2021.pdf]",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf]",
+            "[fuente: 15_SA_004_2023.pdf]",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf]",
+            "[fuente: 17_5308_SASP01_2023.pdf]",
+            "[fuente: 18_0511_2024.pdf]",
+            "[fuente: 19_CSS_297_2024.pdf]",
+            "[fuente: 20_CPS_009_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf, p. 2, §7 Garantías]"
+          ],
+          "tools_used": [
+            "list_tender_documents",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 945,
+            "output_tokens": 279,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000234,
+            "cost_complete": true,
+            "latency_s": 3.173539761999564
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 976,
+            "output_tokens": 124,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00016,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states that no guarantees are required for this contract, matching the reference answer. The extra note about interpreting \"proceso 5\" as PS-147-2025 is a reasonable clarification and does not contradict the reference."
+        },
+        {
+          "id": "q06",
+          "question": "¿Qué profesional se contrata en el objeto del MUNICIPIO DE PIEDECUESTA?",
+          "expected_answer": "ingeniero civil especializado",
+          "expected_sources": [
+            "06_SINF_CPS_050_23.pdf"
+          ],
+          "expected_section": "2. Objeto",
+          "answerable": true,
+          "category": "object",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "En el objeto del proceso SINF-CPS-050-23 del MUNICIPIO DE PIEDECUESTA se contrata un **ingeniero civil especializado**, para prestar servicios profesionales de apoyo a la formulación, diseño y seguimiento de los proyectos de la Secretaría de Infraestructura [fuente: 06_SINF_CPS_050_23.pdf, p. 1, §2 Objeto]. El contrato es de prestación de servicios, por 3 meses y un presupuesto oficial de $12.000.000 COP [fuente: 06_SINF_CPS_050_23.pdf, p. 1, §1 Información general del proceso].",
+          "citations": [
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §2 Objeto]",
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §1 Información general del proceso]"
+          ],
+          "abstained": false,
+          "run_id": "fd41c3f4-ed6b-4faa-b736-8698646d2c88",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 6294,
+            "output_tokens": 454,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000856,
+            "cost_complete": true,
+            "latency_s": 9.752446228001645
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json",
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §3 Necesidad que se pretende satisfacer]",
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §2 Objeto]",
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §1 Información general del proceso]"
+          ],
+          "tools_used": [
+            "search_processes",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1135,
+            "output_tokens": 392,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000309,
+            "cost_complete": true,
+            "latency_s": 4.4725886460000766
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1061,
+            "output_tokens": 125,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000169,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer states the contracted professional is an \"ingeniero civil especializado\", matching the reference answer. The extra details (3 months, $12,000,000 COP budget) are supplementary and do not contradict the reference."
+        },
+        {
+          "id": "q07",
+          "question": "¿Qué indica la nota sobre el presupuesto de AGROSAVIA?",
+          "expected_answer": "El presupuesto oficial registrado para este proceso es de $0",
+          "expected_sources": [
+            "07_135116.pdf"
+          ],
+          "expected_section": "8. Nota sobre el presupuesto",
+          "answerable": true,
+          "category": "budget",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "En el proceso 135116 de AGROSAVIA, la nota indica que el presupuesto oficial registrado es de $0. Por eso, los oferentes deben cotizar precios unitarios, y la entidad adjudicará hasta donde lo permita su disponibilidad presupuestal [fuente: 07_135116.pdf, p. 2, §8 Nota sobre el presupuesto]. El registro del proceso también muestra un precio base de 0 [fuente: datos/secop_muestra.json].",
+          "citations": [
+            "[fuente: 07_135116.pdf, p. 2, §8 Nota sobre el presupuesto]",
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "2486e930-4c62-4ecd-ac83-b7c6f8ec8986",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5483,
+            "output_tokens": 508,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000802,
+            "cost_complete": true,
+            "latency_s": 5.411090133999096
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 07_135116.pdf, p. 2, §8 Nota sobre el presupuesto]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 999,
+            "output_tokens": 309,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000254,
+            "cost_complete": true,
+            "latency_s": 3.008037046998652
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1004,
+            "output_tokens": 142,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000171,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the official registered budget is $0, matching the reference answer. The additional explanation about unit-price quotation and adjudication up to budget availability is consistent with the note and does not contradict the reference. The citation to secop_muestra.json is extra but not a contradiction."
+        },
+        {
+          "id": "q08",
+          "question": "¿Qué porcentaje del presupuesto debe acreditar la experiencia en contratos similares de EMPRESA SOCIAL DEL ESTADO BELLOSALUD?",
+          "expected_answer": "50 % del presupuesto oficial",
+          "expected_sources": [
+            "08_OC10_2494_2025.pdf"
+          ],
+          "expected_section": "5. Requisitos habilitantes",
+          "answerable": true,
+          "category": "experience",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Para el proceso OC10-2494-2025, la experiencia debe acreditarse con **al menos 1 contrato ejecutado de objeto similar, por un valor sumado igual o superior al 50 % del presupuesto oficial** [fuente: 08_OC10_2494_2025.pdf, p. 1, §5 Requisitos habilitantes].",
+          "citations": [
+            "[fuente: 08_OC10_2494_2025.pdf, p. 1, §5 Requisitos habilitantes]"
+          ],
+          "abstained": false,
+          "run_id": "4f82fac2-4666-4e09-a23b-a81e537c9564",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5673,
+            "output_tokens": 450,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000792,
+            "cost_complete": true,
+            "latency_s": 5.510391526000603
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 08_OC10_2494_2025.pdf, p. 1, §5 Requisitos habilitantes]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 967,
+            "output_tokens": 318,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000256,
+            "cost_complete": true,
+            "latency_s": 3.4987833939994744
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 984,
+            "output_tokens": 134,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000165,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the experience must be shown with contracts of similar object summing to at least 50% of the official budget, matching the reference \"50 % del presupuesto oficial\". The added detail of \"al menos 1 contrato\" is consistent and not contradictory."
+        },
+        {
+          "id": "q09",
+          "question": "¿Cuál es el índice de liquidez mínimo de FDLS-LP-098-2019?",
+          "expected_answer": "Mayor o igual a 1.6",
+          "expected_sources": [
+            "11_FDLS_LP_098_2019.pdf"
+          ],
+          "expected_section": "5. Capacidad financiera y organizacional (según RUP)",
+          "answerable": true,
+          "category": "financial",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El índice de liquidez mínimo exigido en el proceso FDLS-LP-098-2019 es **mayor o igual a 1.6**. Este requisito figura en la sección 5 (Capacidad financiera y organizacional, según RUP) del pliego [fuente: 11_FDLS_LP_098_2019.pdf, p. 2, §5 Capacidad financiera y organizacional (según RUP)].",
+          "citations": [
+            "[fuente: 11_FDLS_LP_098_2019.pdf, p. 2, §5 Capacidad financiera y organizacional (según RUP)]"
+          ],
+          "abstained": false,
+          "run_id": "6e679a55-2070-4c33-985d-5123595ec95c",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5563,
+            "output_tokens": 348,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00073,
+            "cost_complete": true,
+            "latency_s": 4.582005176998791
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 11_FDLS_LP_098_2019.pdf, p. 2, §5 Capacidad financiera y organizacional (según RUP)]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 947,
+            "output_tokens": 266,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000228,
+            "cost_complete": true,
+            "latency_s": 3.1607063980009116
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 986,
+            "output_tokens": 105,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000151,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the minimum liquidity index is \"mayor o igual a 1.6\", matching the reference answer. The cited section and source file also match the expected ones."
+        },
+        {
+          "id": "q10",
+          "question": "¿Cómo se paga el contrato de FONVIVIENDA según la forma de pago?",
+          "expected_answer": "Se pagará por demanda",
+          "expected_sources": [
+            "12_FNV_001_2021.pdf"
+          ],
+          "expected_section": "4. Valor y forma de pago",
+          "answerable": true,
+          "category": "payment",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Según el proceso FNV-001-2021 de FONVIVIENDA, el contrato se paga por demanda, según las publicaciones efectivamente realizadas y las tarifas vigentes de la Imprenta Nacional, mediante cortes mensuales. El valor máximo del contrato es de $448.000.000 COP. [fuente: 12_FNV_001_2021.pdf, p. 1, §4 Valor y forma de pago]",
+          "citations": [
+            "[fuente: 12_FNV_001_2021.pdf, p. 1, §4 Valor y forma de pago]"
+          ],
+          "abstained": false,
+          "run_id": "31a241df-6ce5-462c-8d45-572d0a14a9c3",
+          "metrics": {
+            "model_calls": 3,
+            "input_tokens": 8428,
+            "output_tokens": 486,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.001086,
+            "cost_complete": true,
+            "latency_s": 5.874087238000357
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 12_FNV_001_2021.pdf, p. 1, §4 Valor y forma de pago]",
+            "[fuente: 12_FNV_001_2021.pdf, p. 1, §3 Justificación]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 961,
+            "output_tokens": 263,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000228,
+            "cost_complete": true,
+            "latency_s": 3.6154014980020293
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 976,
+            "output_tokens": 122,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000159,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the contract is paid \"por demanda\", which matches the reference answer \"Se pagará por demanda\". The extra details (monthly cuts, maximum value) are supplementary and do not contradict the reference."
+        },
+        {
+          "id": "q11",
+          "question": "¿Cuál es el capital de trabajo mínimo como porcentaje del presupuesto de CO1.REQ.976985?",
+          "expected_answer": "Mayor o igual al 40 % del presupuesto oficial",
+          "expected_sources": [
+            "13_LP_DT_CAU_003_2019.pdf"
+          ],
+          "expected_section": "6. Capacidad financiera y organizacional (según RUP)",
+          "answerable": true,
+          "category": "financial",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El capital de trabajo mínimo exigido en el proceso CO1.REQ.976985 (LP-DT-CAU-003-2019) es **mayor o igual al 40 % del presupuesto oficial** [fuente: 13_LP_DT_CAU_003_2019.pdf, p. 2, §6 Capacidad financiera y organizacional (según RUP)].",
+          "citations": [
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf, p. 2, §6 Capacidad financiera y organizacional (según RUP)]"
+          ],
+          "abstained": false,
+          "run_id": "ff65f43a-84e8-497f-ae74-11c579c255d3",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5644,
+            "output_tokens": 492,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00081,
+            "cost_complete": true,
+            "latency_s": 4.903958416001842
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf, p. 2, §6 Capacidad financiera y organizacional (según RUP)]"
+          ],
+          "tools_used": [
+            "get_process",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 939,
+            "output_tokens": 264,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000226,
+            "cost_complete": true,
+            "latency_s": 3.179187167999771
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 993,
+            "output_tokens": 104,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000151,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the minimum working capital is greater than or equal to 40% of the official budget, matching the reference answer. Citation details are ignored per instructions."
+        },
+        {
+          "id": "q12",
+          "question": "¿Cuáles son los códigos UNSPSC de experiencia de la ALCALDIA DE FLORIDABLANCA?",
+          "expected_answer": "72101500 y 72152700",
+          "expected_sources": [
+            "14_FLO_INFRA_SA_MC_007_2025.pdf"
+          ],
+          "expected_section": "6. Experiencia del proponente",
+          "answerable": true,
+          "category": "experience",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Según el proceso FLO-INFRA-SA-MC-007-2025 de la Alcaldía de Floridablanca, la experiencia del proponente debe acreditarse con contratos clasificados en los códigos UNSPSC **72101500** y **72152700** (al menos uno de ellos). [fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §6 Experiencia del proponente]",
+          "citations": [
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §6 Experiencia del proponente]"
+          ],
+          "abstained": false,
+          "run_id": "81d8c797-ad2f-4e0c-8907-565b03b65e4e",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 7504,
+            "output_tokens": 646,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.001073,
+            "cost_complete": true,
+            "latency_s": 5.434195969999564
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §6 Experiencia del proponente]",
+            "datos/empresa_multiproposito.json",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "get_company_profile",
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 991,
+            "output_tokens": 395,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000297,
+            "cost_complete": true,
+            "latency_s": 3.5090450500028965
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1002,
+            "output_tokens": 140,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00017,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer gives UNSPSC codes 72101500 and 72152700, matching the reference answer exactly. The added detail \"(al menos uno de ellos)\" is a qualifier not in the reference but does not contradict it, and the source citation is correctly identified."
+        },
+        {
+          "id": "q13",
+          "question": "¿Qué porcentaje se retiene de cada pago en el pliego 15?",
+          "expected_answer": "Se retendrá el 5 % de cada pago hasta la liquidación del contrato",
+          "expected_sources": [
+            "15_SA_004_2023.pdf"
+          ],
+          "expected_section": "9. Forma de pago",
+          "answerable": true,
+          "category": "payment",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Según el pliego 15 (SA-004-2023, INDER Medellín), se retiene el 5 % de cada pago hasta la liquidación del contrato. [fuente: 15_SA_004_2023.pdf, p. 2, §9 Forma de pago]\n\nInterpreté \"pliego 15\" como el archivo 15_SA_004_2023.pdf, según el listado de documentos. [fuente: 15_SA_004_2023.pdf]",
+          "citations": [
+            "[fuente: 15_SA_004_2023.pdf, p. 2, §9 Forma de pago]",
+            "[fuente: 15_SA_004_2023.pdf]"
+          ],
+          "abstained": false,
+          "run_id": "ce972cbc-c1c1-479c-9fce-518025cb1c35",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 8454,
+            "output_tokens": 430,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00106,
+            "cost_complete": true,
+            "latency_s": 3.1132113469975593
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf, p. 2, §10 Forma de pago]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf, p. 2, §9 Forma de pago]",
+            "[fuente: 15_SA_004_2023.pdf, p. 2, §9 Forma de pago]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §9 Forma de pago]",
+            "[fuente: 15_SA_004_2023.pdf, p. 2, §8 Garantías]",
+            "[fuente: 01_EDP_545_2022.pdf]",
+            "[fuente: 02_CD_55_2021_3516.pdf]",
+            "[fuente: 03_RE_CGBM_049_2024.pdf]",
+            "[fuente: 04_CD_CPS_0720_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf]",
+            "[fuente: 06_SINF_CPS_050_23.pdf]",
+            "[fuente: 07_135116.pdf]",
+            "[fuente: 08_OC10_2494_2025.pdf]",
+            "[fuente: 09_SDIS_CPS_302405_2024.pdf]",
+            "[fuente: 10_009_2021.pdf]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf]",
+            "[fuente: 12_FNV_001_2021.pdf]",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf]",
+            "[fuente: 15_SA_004_2023.pdf]",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf]",
+            "[fuente: 17_5308_SASP01_2023.pdf]",
+            "[fuente: 18_0511_2024.pdf]",
+            "[fuente: 19_CSS_297_2024.pdf]",
+            "[fuente: 20_CPS_009_2026.pdf]"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "list_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 957,
+            "output_tokens": 277,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000234,
+            "cost_complete": true,
+            "latency_s": 3.2523861519985076
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 994,
+            "output_tokens": 134,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000166,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states a 5% retention on each payment until contract liquidation, matching the reference answer, and cites the expected source file and section. The added interpretation of \"pliego 15\" as 15_SA_004_2023.pdf aligns with the expected source."
+        },
+        {
+          "id": "q14",
+          "question": "¿Cuál es el presupuesto oficial de la gobernacion del choco?",
+          "expected_answer": "$24.000.000 COP",
+          "expected_sources": [
+            "16_CD_PS_GDCH_186SS_2024.pdf"
+          ],
+          "expected_section": "1. Información general del proceso",
+          "answerable": true,
+          "category": "budget",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "En la muestra de datos consultada encontré un solo proceso de la Gobernación del Chocó, el CD-PS-GDCH-186SS-2024 (contratación directa para un nutricionista), con presupuesto oficial de $24.000.000 COP [fuente: 16_CD_PS_GDCH_186SS_2024.pdf, p. 1, §1 Información general del proceso]. El registro de SECOP coincide con ese precio base [fuente: datos/secop_muestra.json].\n\nEste dato corresponde solo a ese proceso. No pude establecer con las herramientas un presupuesto total de la entidad.",
+          "citations": [
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf, p. 1, §1 Información general del proceso]",
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "f365f1cb-300e-446b-8bc3-d06038ec055b",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5716,
+            "output_tokens": 600,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000872,
+            "cost_complete": true,
+            "latency_s": 6.413560330998735
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf, p. 1, §1 Información general del proceso]"
+          ],
+          "tools_used": [
+            "search_processes",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1075,
+            "output_tokens": 238,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000227,
+            "cost_complete": true,
+            "latency_s": 2.6252847600007954
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1042,
+            "output_tokens": 140,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000174,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate gives $24.000.000 COP as the presupuesto oficial, matching the expected answer and source file 16_CD_PS_GDCH_186SS_2024.pdf. It appropriately scopes the figure to that single process and does not contradict the reference."
+        },
+        {
+          "id": "q15",
+          "question": "¿Cuál es la fecha de la audiencia de subasta en 5308/SASP01/2023?",
+          "expected_answer": "22 de marzo de 2023",
+          "expected_sources": [
+            "17_5308_SASP01_2023.pdf"
+          ],
+          "expected_section": "3. Cronograma",
+          "answerable": true,
+          "category": "schedule",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "La audiencia de subasta en el proceso 5308/SASP01/2023 está programada para el 22 de marzo de 2023 [fuente: 17_5308_SASP01_2023.pdf, p. 1, §3 Cronograma].",
+          "citations": [
+            "[fuente: 17_5308_SASP01_2023.pdf, p. 1, §3 Cronograma]"
+          ],
+          "abstained": false,
+          "run_id": "b59f4538-6fe4-42e1-9113-9ed44df76c67",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5562,
+            "output_tokens": 209,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000661,
+            "cost_complete": true,
+            "latency_s": 3.805153324999992
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 17_5308_SASP01_2023.pdf, p. 2, §6 Regla de adjudicación]",
+            "[fuente: 17_5308_SASP01_2023.pdf, p. 1, §3 Cronograma]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 831,
+            "output_tokens": 186,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000176,
+            "cost_complete": true,
+            "latency_s": 2.9059323080000468
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 911,
+            "output_tokens": 108,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000145,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer states the auction hearing date as 22 de marzo de 2023, which matches the expected answer exactly. The citation is not evaluated for this judgment."
+        },
+        {
+          "id": "q16",
+          "question": "¿Cuál es el índice máximo de endeudamiento exigido por ESE CARMEN EMILIA OSPINA?",
+          "expected_answer": "menor o igual al 65 %",
+          "expected_sources": [
+            "18_0511_2024.pdf"
+          ],
+          "expected_section": "5. Requisitos habilitantes",
+          "answerable": true,
+          "category": "financial",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El índice de endeudamiento máximo exigido es **menor o igual al 65 %**, según los estados financieros a 31 de diciembre del año anterior. Este requisito corresponde al proceso 0511-2024 (suministro de insumos para el laboratorio clínico), cuyo precio base es de 320.000.000 COP [fuente: 18_0511_2024.pdf, p. 1, §5 Requisitos habilitantes] [fuente: datos/secop_muestra.json].",
+          "citations": [
+            "[fuente: 18_0511_2024.pdf, p. 1, §5 Requisitos habilitantes]",
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "ce0da9ce-ca1b-400f-af88-e75044cdb681",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5658,
+            "output_tokens": 532,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000832,
+            "cost_complete": true,
+            "latency_s": 5.722419621000881
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 18_0511_2024.pdf, p. 1, §5 Requisitos habilitantes]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1015,
+            "output_tokens": 314,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000258,
+            "cost_complete": true,
+            "latency_s": 3.1726384020003024
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1002,
+            "output_tokens": 110,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000155,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer states the maximum debt index as \"menor o igual al 65 %\", matching the reference answer. Extra context (process details, source citations) does not contradict the reference."
+        },
+        {
+          "id": "q17",
+          "question": "¿Qué dice el pliego sobre el seguro de vida del gerente?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_requirement",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Busqué en los documentos de licitación indexados con los términos \"seguro de vida del gerente\", \"seguro de vida\", \"póliza de vida representante legal gerente\" y \"gerente seguro\", y no encontré ningún fragmento que mencione un seguro de vida para el gerente. Tampoco lo encontré al filtrar por el pliego FDLS-LP-098-2019 (CO1.REQ.848621). Por eso no puedo afirmar qué dice el pliego sobre este tema.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "ed993fd0-a52f-4aec-82f0-e3c8970d32ff",
+          "metrics": {
+            "model_calls": 5,
+            "input_tokens": 21047,
+            "output_tokens": 729,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.002469,
+            "cost_complete": true,
+            "latency_s": 11.205614015998435
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 01_EDP_545_2022.pdf]",
+            "[fuente: 02_CD_55_2021_3516.pdf]",
+            "[fuente: 03_RE_CGBM_049_2024.pdf]",
+            "[fuente: 04_CD_CPS_0720_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf]",
+            "[fuente: 06_SINF_CPS_050_23.pdf]",
+            "[fuente: 07_135116.pdf]",
+            "[fuente: 08_OC10_2494_2025.pdf]",
+            "[fuente: 09_SDIS_CPS_302405_2024.pdf]",
+            "[fuente: 10_009_2021.pdf]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf]",
+            "[fuente: 12_FNV_001_2021.pdf]",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf]",
+            "[fuente: 15_SA_004_2023.pdf]",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf]",
+            "[fuente: 17_5308_SASP01_2023.pdf]",
+            "[fuente: 18_0511_2024.pdf]",
+            "[fuente: 19_CSS_297_2024.pdf]",
+            "[fuente: 20_CPS_009_2026.pdf]"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "list_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 997,
+            "output_tokens": 695,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000447,
+            "cost_complete": true,
+            "latency_s": 5.518858300001739
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 974,
+            "output_tokens": 124,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000159,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable per the reference (\"No lo sé\", no expected sources). The candidate correctly abstains, stating it found no fragment about a life insurance for the manager in the indexed documents, which matches the reference."
+        },
+        {
+          "id": "q18",
+          "question": "¿Cuál es la prima del seguro de vida del gerente en el proceso 11?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_requirement",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Interpreté \"proceso 11\" como el documento 11_FDLS_LP_098_2019.pdf (proceso CO1.REQ.848621, referencia FDLS-LP-098-2019, Alcaldía Local de Sumapaz) [fuente: 11_FDLS_LP_098_2019.pdf]. Las búsquedas en ese documento por \"seguro de vida\", \"gerente\", \"prima\" y \"póliza\" no devolvieron resultados, por lo que no encuentro en las herramientas ninguna prima del seguro de vida del gerente.",
+          "citations": [
+            "[fuente: 11_FDLS_LP_098_2019.pdf]"
+          ],
+          "abstained": true,
+          "run_id": "dc343c3a-84b2-4eae-9fcb-692333b1726e",
+          "metrics": {
+            "model_calls": 6,
+            "input_tokens": 31724,
+            "output_tokens": 1059,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.003702,
+            "cost_complete": true,
+            "latency_s": 9.579930239000532
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 01_EDP_545_2022.pdf]",
+            "[fuente: 02_CD_55_2021_3516.pdf]",
+            "[fuente: 03_RE_CGBM_049_2024.pdf]",
+            "[fuente: 04_CD_CPS_0720_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf]",
+            "[fuente: 06_SINF_CPS_050_23.pdf]",
+            "[fuente: 07_135116.pdf]",
+            "[fuente: 08_OC10_2494_2025.pdf]",
+            "[fuente: 09_SDIS_CPS_302405_2024.pdf]",
+            "[fuente: 10_009_2021.pdf]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf]",
+            "[fuente: 12_FNV_001_2021.pdf]",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf]",
+            "[fuente: 15_SA_004_2023.pdf]",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf]",
+            "[fuente: 17_5308_SASP01_2023.pdf]",
+            "[fuente: 18_0511_2024.pdf]",
+            "[fuente: 19_CSS_297_2024.pdf]",
+            "[fuente: 20_CPS_009_2026.pdf]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "list_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1047,
+            "output_tokens": 271,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00024,
+            "cost_complete": true,
+            "latency_s": 3.5388347139996768
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1001,
+            "output_tokens": 129,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000165,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable (expected \"No lo sé\"), and the candidate correctly abstains, explaining that searches in the interpreted document found no life insurance premium for the manager. The abstention is appropriate and does not fabricate details."
+        },
+        {
+          "id": "q19",
+          "question": "¿Cuál es el correo electrónico del supervisor de EDP-545-2022?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_contact",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. No encontré el correo electrónico del supervisor de EDP-545-2022. La búsqueda en los documentos de la licitación no arrojó resultados, y el registro del proceso (DANE, contratación directa, CO1.REQ.2577563) no incluye un campo de supervisor ni de correo [fuente: datos/secop_muestra.json].",
+          "citations": [
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": true,
+          "run_id": "41b46805-dcea-4955-a8ef-04e7d15ec08c",
+          "metrics": {
+            "model_calls": 3,
+            "input_tokens": 8286,
+            "output_tokens": 378,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.001018,
+            "cost_complete": true,
+            "latency_s": 5.091284624999389
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 905,
+            "output_tokens": 263,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000222,
+            "cost_complete": true,
+            "latency_s": 3.286475934997725
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 920,
+            "output_tokens": 120,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000152,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable from the sources; the expected answer is \"No lo sé\". The candidate abstains correctly (\"No lo sé\") and gives a brief justification without fabricating an email or supervisor details."
+        },
+        {
+          "id": "q20",
+          "question": "¿Cuál es la multa diaria por retraso del proceso 14?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_penalty",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Interpreté \"proceso 14\" como el documento 14 de la lista, que corresponde al proceso FLO-INFRA-SA-MC-007-2025 (Alcaldía de Floridablanca) [fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 1, §1 Información general del proceso]. Busqué en ese documento con varias consultas sobre multas, multa diaria, cláusula penal, sanciones y retraso, y no encontré ninguna cifra de multa diaria por retraso. Tampoco aparece en el registro del proceso [fuente: get_process, FLO-INFRA-SA-MC-007-2025].\n\nLo que sí consta en el documento es la garantía de cumplimiento, equivalente al 10 % del valor del contrato [fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §8 Garantías]. Si el \"proceso 14\" se refiere a otro expediente, indíqueme su referencia.",
+          "citations": [
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 1, §1 Información general del proceso]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §8 Garantías]"
+          ],
+          "abstained": true,
+          "run_id": "3f811084-6fcb-413f-ad5e-c9959794f5ec",
+          "metrics": {
+            "model_calls": 8,
+            "input_tokens": 50128,
+            "output_tokens": 1719,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.005872,
+            "cost_complete": true,
+            "latency_s": 15.155465723000816
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 01_EDP_545_2022.pdf]",
+            "[fuente: 02_CD_55_2021_3516.pdf]",
+            "[fuente: 03_RE_CGBM_049_2024.pdf]",
+            "[fuente: 04_CD_CPS_0720_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf]",
+            "[fuente: 06_SINF_CPS_050_23.pdf]",
+            "[fuente: 07_135116.pdf]",
+            "[fuente: 08_OC10_2494_2025.pdf]",
+            "[fuente: 09_SDIS_CPS_302405_2024.pdf]",
+            "[fuente: 10_009_2021.pdf]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf]",
+            "[fuente: 12_FNV_001_2021.pdf]",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf]",
+            "[fuente: 15_SA_004_2023.pdf]",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf]",
+            "[fuente: 17_5308_SASP01_2023.pdf]",
+            "[fuente: 18_0511_2024.pdf]",
+            "[fuente: 19_CSS_297_2024.pdf]",
+            "[fuente: 20_CPS_009_2026.pdf]",
+            "datos/secop_muestra.json",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 1, §1 Información general del proceso]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §8 Garantías]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §6 Experiencia del proponente]"
+          ],
+          "tools_used": [
+            "list_tender_documents",
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1357,
+            "output_tokens": 347,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000309,
+            "cost_complete": true,
+            "latency_s": 3.3372995879981318
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1152,
+            "output_tokens": 147,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000189,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable per the reference (\"No lo sé\"). The candidate correctly abstains, stating it could not find a daily delay penalty in the document, and offers a reasonable clarification request. Its extra details (guarantee of 10%) are supplementary and do not contradict the reference."
+        },
+        {
+          "id": "q21",
+          "question": "¿Cuál es el nombre de la empresa ganadora de RE-CGBM-049-2024?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_award",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. El registro del proceso indica que está en estado \"Evaluación\", que no está adjudicado y que el proveedor figura como \"No Definido\" [fuente: datos/secop_muestra.json]. La búsqueda en los documentos del proceso no encontró información sobre un ganador [fuente: search_tender_documents].",
+          "citations": [
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": true,
+          "run_id": "9d94543e-3f4e-44e9-8e7e-fc5c2e02510e",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5287,
+            "output_tokens": 460,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000759,
+            "cost_complete": true,
+            "latency_s": 5.266732637999667
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "get_process",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 889,
+            "output_tokens": 260,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000219,
+            "cost_complete": true,
+            "latency_s": 4.194721436000691
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 915,
+            "output_tokens": 118,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00015,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable (no awarded winner), and the candidate correctly abstains with \"No lo sé\", supported by the process being in evaluation with no defined provider. This matches the reference expected answer."
+        },
+        {
+          "id": "q22",
+          "question": "¿Cuál es la capital de Francia?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "off_topic",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Solo puedo responder con base en las herramientas de contratación SECOP y la memoria disponible, y ninguna de ellas contiene información sobre la capital de Francia.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "99ba3cd7-a111-4e7c-a21b-f089a3f149df",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2153,
+            "output_tokens": 326,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000378,
+            "cost_complete": true,
+            "latency_s": 2.8129697690019384
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 759,
+            "output_tokens": 219,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000185,
+            "cost_complete": true,
+            "latency_s": 2.739310879002005
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 845,
+            "output_tokens": 119,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000144,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable within the scope (off-topic), and the candidate correctly abstains with \"No lo sé\", matching the reference. The extra explanation about SECOP tools does not contradict the reference."
+        },
+        {
+          "id": "q23",
+          "question": "¿Cómo preparo una receta de pastel de chocolate?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "off_topic",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Mi función es analizar documentos y procesos de contratación pública de SECOP, y no tengo información en las herramientas disponibles sobre recetas de cocina. Si quiere, puedo buscar procesos o requisitos de contratación en SECOP.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "35895056-ef24-4669-8c5e-ada654b7eaa2",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2160,
+            "output_tokens": 376,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000404,
+            "cost_complete": true,
+            "latency_s": 3.0979441669987864
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 827,
+            "output_tokens": 216,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000191,
+            "cost_complete": true,
+            "latency_s": 2.2671336810017237
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 879,
+            "output_tokens": 123,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000149,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable within the SECOP scope; the reference expects \"No lo sé\". The candidate correctly abstains with \"No lo sé\" and briefly explains the scope limitation without fabricating a recipe."
+        },
+        {
+          "id": "q24",
+          "question": "¿A qué distancia está la Luna de Júpiter?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "off_topic",
+          "configuration": "B-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Soy un analista de documentos de procesos de SECOP y mis herramientas no contienen información sobre la distancia entre la Luna y Júpiter. Puedo ayudarte con consultas sobre procesos de contratación pública, documentos de licitaciones o el perfil de la empresa.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "b9fb592c-1c38-4c16-8645-36208e48aef5",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2158,
+            "output_tokens": 353,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000392,
+            "cost_complete": true,
+            "latency_s": 2.619172900002013
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 849,
+            "output_tokens": 195,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000182,
+            "cost_complete": true,
+            "latency_s": 2.5897280579993094
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 890,
+            "output_tokens": 122,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00015,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable within the SECOP document context (off_topic, expected \"No lo sé\"). The candidate correctly abstains with \"No lo sé\" and briefly explains its scope without fabricating any distance."
+        }
+      ],
+      "overall": {
+        "questions": 24,
+        "answerable": 16,
+        "unanswerable": 8,
+        "errors": 0,
+        "correctness": 1.0,
+        "source_accuracy": 0.9375,
+        "abstention_accuracy": 1.0,
+        "false_abstention_rate": 0.0,
+        "cost_usd": 0.033999,
+        "judge_cost_usd": 0.003809,
+        "input_tokens": 244137,
+        "output_tokens": 19178,
+        "mean_latency_s": 6.33850971629181,
+        "close_latency_s": 83.86896126500505
+      }
+    },
+    {
+      "configuration": "A-claude",
+      "model": "anthropic:claude-haiku-5-5",
+      "guard": false,
+      "questions": [
+        {
+          "id": "q01",
+          "question": "¿Cuál es el presupuesto oficial de EDP-545-2022?",
+          "expected_answer": "$57.333.333 COP",
+          "expected_sources": [
+            "01_EDP_545_2022.pdf"
+          ],
+          "expected_section": "1. Información general del proceso",
+          "answerable": true,
+          "category": "budget",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El precio base registrado para el proceso EDP-545-2022 es de COP 57.333.333. Este dato figura en el campo \"precio_base\" del registro del proceso, que tomo como el presupuesto oficial. [fuente: datos/secop_muestra.json]\n\nNo encontré documentos del proceso que confirmen este valor como presupuesto oficial. [fuente: datos/secop_muestra.json]",
+          "citations": [
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "86b2a579-674e-495a-8cd2-e9e8abda02f1",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5180,
+            "output_tokens": 466,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000751,
+            "cost_complete": true,
+            "latency_s": 4.738437435000378
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "get_process",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 925,
+            "output_tokens": 244,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000214,
+            "cost_complete": true,
+            "latency_s": 4.100089965999359
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 962,
+            "output_tokens": 135,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000164,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate gives COP 57.333.333, matching the expected $57.333.333 COP. It notes the value comes from the precio_base field and that no document confirms it as the official budget; this is a caveat, not a contradiction, and the core answer is correct."
+        },
+        {
+          "id": "q02",
+          "question": "¿En cuántas cuotas mensuales se paga el contrato de 02_CD_55_2021_3516.pdf?",
+          "expected_answer": "6 cuotas mensuales",
+          "expected_sources": [
+            "02_CD_55_2021_3516.pdf"
+          ],
+          "expected_section": "6. Valor y forma de pago",
+          "answerable": true,
+          "category": "payment",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El contrato se paga en 6 cuotas mensuales, previa presentación del informe de actividades, la certificación de cumplimiento del supervisor y el pago de aportes al sistema de seguridad social. [fuente: 02_CD_55_2021_3516.pdf, p. 2, §6 Valor y forma de pago]",
+          "citations": [
+            "[fuente: 02_CD_55_2021_3516.pdf, p. 2, §6 Valor y forma de pago]"
+          ],
+          "abstained": false,
+          "run_id": "aa375fdf-6c8b-4626-88cb-051085238ae6",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 4696,
+            "output_tokens": 187,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000563,
+            "cost_complete": true,
+            "latency_s": 2.4414268619984796
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 02_CD_55_2021_3516.pdf, p. 2, §6 Valor y forma de pago]"
+          ],
+          "tools_used": [
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 903,
+            "output_tokens": 258,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000219,
+            "cost_complete": true,
+            "latency_s": 2.6187504950030416
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 950,
+            "output_tokens": 112,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000151,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the contract is paid in 6 monthly installments, matching the reference answer \"6 cuotas mensuales\". The extra conditions on payment do not contradict the reference."
+        },
+        {
+          "id": "q03",
+          "question": "¿Cuál es la fecha de cierre y entrega de ofertas de CO1.REQ.7128715?",
+          "expected_answer": "12 de noviembre de 2024",
+          "expected_sources": [
+            "03_RE_CGBM_049_2024.pdf"
+          ],
+          "expected_section": "4. Cronograma",
+          "answerable": true,
+          "category": "schedule",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El cierre y la entrega de ofertas del proceso CO1.REQ.7128715 (RE-CGBM-049-2024) es el **12 de noviembre de 2024** [fuente: 03_RE_CGBM_049_2024.pdf, p. 1, §4 Cronograma]. El registro del proceso también indica esa misma fecha de recepción [fuente: datos/secop_muestra.json].",
+          "citations": [
+            "[fuente: 03_RE_CGBM_049_2024.pdf, p. 1, §4 Cronograma]",
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "8dd7aa14-0f89-4989-a87e-a214fba4edcd",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5470,
+            "output_tokens": 463,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000779,
+            "cost_complete": true,
+            "latency_s": 5.057782648000284
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json",
+            "[fuente: 03_RE_CGBM_049_2024.pdf, p. 1, §4 Cronograma]"
+          ],
+          "tools_used": [
+            "get_process",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 951,
+            "output_tokens": 272,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000231,
+            "cost_complete": true,
+            "latency_s": 3.7770796740005608
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 974,
+            "output_tokens": 103,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000149,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the closing and delivery date of offers as 12 de noviembre de 2024, matching the expected answer. The added source citations are not judged here."
+        },
+        {
+          "id": "q04",
+          "question": "¿Cuántos meses de experiencia profesional requiere CD-CPS-0720-2026?",
+          "expected_answer": "Mínimo 36 meses de experiencia profesional",
+          "expected_sources": [
+            "04_CD_CPS_0720_2026.pdf"
+          ],
+          "expected_section": "4. Perfil e idoneidad requeridos",
+          "answerable": true,
+          "category": "experience",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Según el documento del proceso CD-CPS-0720-2026, se requieren mínimo 36 meses de experiencia profesional, de los cuales 12 meses deben ser en gestión financiera de contratos o convenios públicos [fuente: 04_CD_CPS_0720_2026.pdf, p. 1, §4 Perfil e idoneidad requeridos].",
+          "citations": [
+            "[fuente: 04_CD_CPS_0720_2026.pdf, p. 1, §4 Perfil e idoneidad requeridos]"
+          ],
+          "abstained": false,
+          "run_id": "cf4f7f53-c7a8-4b42-9338-af7ccc95adcb",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5397,
+            "output_tokens": 290,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000685,
+            "cost_complete": true,
+            "latency_s": 3.994722440998885
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 04_CD_CPS_0720_2026.pdf, p. 1, §4 Perfil e idoneidad requeridos]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 917,
+            "output_tokens": 238,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000211,
+            "cost_complete": true,
+            "latency_s": 3.747015637000004
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 972,
+            "output_tokens": 119,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000157,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer states the minimum of 36 months of professional experience, matching the reference. The extra detail about 12 months in public contract financial management is not contradicted by the reference, and the cited source and section match."
+        },
+        {
+          "id": "q05",
+          "question": "¿Se exige constitución de garantías en el proceso 5?",
+          "expected_answer": "no se exige la constitución de garantías para este contrato",
+          "expected_sources": [
+            "05_PS_147_2025.pdf"
+          ],
+          "expected_section": "7. Garantías",
+          "answerable": true,
+          "category": "guarantees",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Sí, lo entendí como el proceso PS-147-2025 (quinto documento indexado). Según su sección de garantías, no se exige la constitución de garantías para este contrato, porque así lo indica el análisis de riesgos [fuente: 05_PS_147_2025.pdf, p. 2, §7 Garantías].",
+          "citations": [
+            "[fuente: 05_PS_147_2025.pdf, p. 2, §7 Garantías]"
+          ],
+          "abstained": false,
+          "run_id": "f7a3dbec-bbad-4c16-adff-d321b0772fff",
+          "metrics": {
+            "model_calls": 7,
+            "input_tokens": 46759,
+            "output_tokens": 1221,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.005286,
+            "cost_complete": true,
+            "latency_s": 12.10173844900055
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 01_EDP_545_2022.pdf]",
+            "[fuente: 02_CD_55_2021_3516.pdf]",
+            "[fuente: 03_RE_CGBM_049_2024.pdf]",
+            "[fuente: 04_CD_CPS_0720_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf]",
+            "[fuente: 06_SINF_CPS_050_23.pdf]",
+            "[fuente: 07_135116.pdf]",
+            "[fuente: 08_OC10_2494_2025.pdf]",
+            "[fuente: 09_SDIS_CPS_302405_2024.pdf]",
+            "[fuente: 10_009_2021.pdf]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf]",
+            "[fuente: 12_FNV_001_2021.pdf]",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf]",
+            "[fuente: 15_SA_004_2023.pdf]",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf]",
+            "[fuente: 17_5308_SASP01_2023.pdf]",
+            "[fuente: 18_0511_2024.pdf]",
+            "[fuente: 19_CSS_297_2024.pdf]",
+            "[fuente: 20_CPS_009_2026.pdf]",
+            "datos/secop_muestra.json",
+            "[fuente: 05_PS_147_2025.pdf, p. 1, §1 Información general del proceso]",
+            "[fuente: 05_PS_147_2025.pdf, p. 1, §2 Objeto]",
+            "[fuente: 05_PS_147_2025.pdf, p. 2, §7 Garantías]"
+          ],
+          "tools_used": [
+            "list_tender_documents",
+            "search_processes",
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 863,
+            "output_tokens": 230,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000201,
+            "cost_complete": true,
+            "latency_s": 3.5724763430007442
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 931,
+            "output_tokens": 120,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000153,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer states that no guarantees are required for this contract, matching the reference answer, and cites the expected source and section (§7 Garantías). The added rationale about risk analysis does not contradict the reference."
+        },
+        {
+          "id": "q06",
+          "question": "¿Qué profesional se contrata en el objeto del MUNICIPIO DE PIEDECUESTA?",
+          "expected_answer": "ingeniero civil especializado",
+          "expected_sources": [
+            "06_SINF_CPS_050_23.pdf"
+          ],
+          "expected_section": "2. Objeto",
+          "answerable": true,
+          "category": "object",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "En el proceso SINF-CPS-050-23 del MUNICIPIO DE PIEDECUESTA se contrata un **ingeniero civil especializado**, para apoyar la formulación, diseño y seguimiento a los proyectos de la Secretaría de Infraestructura [fuente: 06_SINF_CPS_050_23.pdf, p. 1, §2 Objeto]. La modalidad es contratación directa, por prestación de servicios, con un plazo de 3 meses [fuente: 06_SINF_CPS_050_23.pdf, p. 1, §1 Información general del proceso].",
+          "citations": [
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §2 Objeto]",
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §1 Información general del proceso]"
+          ],
+          "abstained": false,
+          "run_id": "3d11a087-abbe-4d47-a36e-d2dc3bc3a2ae",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 6304,
+            "output_tokens": 440,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00085,
+            "cost_complete": true,
+            "latency_s": 4.696565744001418
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json",
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §3 Necesidad que se pretende satisfacer]",
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §2 Objeto]",
+            "[fuente: 06_SINF_CPS_050_23.pdf, p. 1, §1 Información general del proceso]"
+          ],
+          "tools_used": [
+            "search_processes",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1087,
+            "output_tokens": 300,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000259,
+            "cost_complete": true,
+            "latency_s": 2.73525902700203
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1037,
+            "output_tokens": 123,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000165,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer states the contracted professional is an \"ingeniero civil especializado\", matching the reference. The extra details (direct contracting, 3-month term, purpose) are supplementary and do not contradict the reference."
+        },
+        {
+          "id": "q07",
+          "question": "¿Qué indica la nota sobre el presupuesto de AGROSAVIA?",
+          "expected_answer": "El presupuesto oficial registrado para este proceso es de $0",
+          "expected_sources": [
+            "07_135116.pdf"
+          ],
+          "expected_section": "8. Nota sobre el presupuesto",
+          "answerable": true,
+          "category": "budget",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El presupuesto oficial registrado para el proceso 135116 de AGROSAVIA es de $0. Los oferentes deben cotizar precios unitarios, y la entidad adjudicará hasta donde lo permita su disponibilidad presupuestal. [fuente: 07_135116.pdf, p. 2, §8 Nota sobre el presupuesto]",
+          "citations": [
+            "[fuente: 07_135116.pdf, p. 2, §8 Nota sobre el presupuesto]"
+          ],
+          "abstained": false,
+          "run_id": "8b609203-25c3-4587-90a3-f5665c642910",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5483,
+            "output_tokens": 360,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000728,
+            "cost_complete": true,
+            "latency_s": 4.807697546999407
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 07_135116.pdf, p. 2, §8 Nota sobre el presupuesto]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 905,
+            "output_tokens": 254,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000217,
+            "cost_complete": true,
+            "latency_s": 3.8436123259998567
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 957,
+            "output_tokens": 118,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000155,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the official budget registered for the process is $0, matching the reference. The extra detail about unit-price quoting and adjudication up to available budget is not contradictory and is attributed to the cited section."
+        },
+        {
+          "id": "q08",
+          "question": "¿Qué porcentaje del presupuesto debe acreditar la experiencia en contratos similares de EMPRESA SOCIAL DEL ESTADO BELLOSALUD?",
+          "expected_answer": "50 % del presupuesto oficial",
+          "expected_sources": [
+            "08_OC10_2494_2025.pdf"
+          ],
+          "expected_section": "5. Requisitos habilitantes",
+          "answerable": true,
+          "category": "experience",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Para el proceso OC10-2494-2025 de la ESE BELLOSALUD, la experiencia debe acreditarse con **al menos 1 contrato ejecutado de objeto similar, por un valor sumado igual o superior al 50 % del presupuesto oficial** [fuente: 08_OC10_2494_2025.pdf, p. 1, §5 Requisitos habilitantes].",
+          "citations": [
+            "[fuente: 08_OC10_2494_2025.pdf, p. 1, §5 Requisitos habilitantes]"
+          ],
+          "abstained": false,
+          "run_id": "e4a21dd7-4327-49ef-8743-24853e497a3e",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5667,
+            "output_tokens": 485,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000809,
+            "cost_complete": true,
+            "latency_s": 7.176466352000716
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 08_OC10_2494_2025.pdf, p. 1, §5 Requisitos habilitantes]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 995,
+            "output_tokens": 462,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000331,
+            "cost_complete": true,
+            "latency_s": 4.89839034599936
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 998,
+            "output_tokens": 144,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000172,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the experience must be shown with contracts of similar object whose summed value is at least 50% of the official budget, which matches the reference answer \"50 % del presupuesto oficial\". The extra detail (at least 1 contract) is consistent with the requirement and not a contradiction."
+        },
+        {
+          "id": "q09",
+          "question": "¿Cuál es el índice de liquidez mínimo de FDLS-LP-098-2019?",
+          "expected_answer": "Mayor o igual a 1.6",
+          "expected_sources": [
+            "11_FDLS_LP_098_2019.pdf"
+          ],
+          "expected_section": "5. Capacidad financiera y organizacional (según RUP)",
+          "answerable": true,
+          "category": "financial",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El índice de liquidez mínimo exigido en el proceso FDLS-LP-098-2019 es **mayor o igual a 1.6**, según la sección 5 (capacidad financiera y organizacional según RUP) del pliego. [fuente: 11_FDLS_LP_098_2019.pdf, p. 2, §5 Capacidad financiera y organizacional (según RUP)]",
+          "citations": [
+            "[fuente: 11_FDLS_LP_098_2019.pdf, p. 2, §5 Capacidad financiera y organizacional (según RUP)]"
+          ],
+          "abstained": false,
+          "run_id": "dbe08cf7-5b6d-49e4-a008-8fee27ef8bb2",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5596,
+            "output_tokens": 373,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000746,
+            "cost_complete": true,
+            "latency_s": 4.215854832997138
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 11_FDLS_LP_098_2019.pdf, p. 2, §5 Capacidad financiera y organizacional (según RUP)]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 931,
+            "output_tokens": 362,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000274,
+            "cost_complete": true,
+            "latency_s": 3.515354479997768
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 978,
+            "output_tokens": 100,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000148,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the minimum liquidity index is \"mayor o igual a 1.6\", matching the reference answer, and cites the correct source and section."
+        },
+        {
+          "id": "q10",
+          "question": "¿Cómo se paga el contrato de FONVIVIENDA según la forma de pago?",
+          "expected_answer": "Se pagará por demanda",
+          "expected_sources": [
+            "12_FNV_001_2021.pdf"
+          ],
+          "expected_section": "4. Valor y forma de pago",
+          "answerable": true,
+          "category": "payment",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Según el proceso FNV-001-2021 de FONVIVIENDA, el contrato se paga por demanda, según las publicaciones efectivamente realizadas y las tarifas vigentes de la Imprenta Nacional, mediante cortes mensuales. El valor máximo del contrato es de $448.000.000 COP. [fuente: 12_FNV_001_2021.pdf, p. 1, §4 Valor y forma de pago]",
+          "citations": [
+            "[fuente: 12_FNV_001_2021.pdf, p. 1, §4 Valor y forma de pago]"
+          ],
+          "abstained": false,
+          "run_id": "92614c80-9af6-4997-8991-2d4d40e63259",
+          "metrics": {
+            "model_calls": 3,
+            "input_tokens": 8422,
+            "output_tokens": 483,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.001084,
+            "cost_complete": true,
+            "latency_s": 5.105602222000016
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 12_FNV_001_2021.pdf, p. 1, §4 Valor y forma de pago]",
+            "[fuente: 12_FNV_001_2021.pdf, p. 1, §3 Justificación]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 961,
+            "output_tokens": 275,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000234,
+            "cost_complete": true,
+            "latency_s": 4.540405930001725
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 976,
+            "output_tokens": 125,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00016,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the contract is paid \"por demanda\", matching the reference answer \"Se pagará por demanda\". The extra details (monthly cuts, maximum value) are not contradicted by the reference and the core answer is correct."
+        },
+        {
+          "id": "q11",
+          "question": "¿Cuál es el capital de trabajo mínimo como porcentaje del presupuesto de CO1.REQ.976985?",
+          "expected_answer": "Mayor o igual al 40 % del presupuesto oficial",
+          "expected_sources": [
+            "13_LP_DT_CAU_003_2019.pdf"
+          ],
+          "expected_section": "6. Capacidad financiera y organizacional (según RUP)",
+          "answerable": true,
+          "category": "financial",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El capital de trabajo mínimo exigido es **mayor o igual al 40 % del presupuesto oficial** [fuente: 13_LP_DT_CAU_003_2019.pdf, p. 2, §6 Capacidad financiera y organizacional (según RUP)].\n\nReferencia del proceso: LP-DT-CAU-003-2019 (INVIAS, Dirección Territorial Cauca) [fuente: SECOP muestra - datos/secop_muestra.json].",
+          "citations": [
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf, p. 2, §6 Capacidad financiera y organizacional (según RUP)]",
+            "[fuente: SECOP muestra - datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "5234cf4f-29da-41d8-bfdd-dccd1796de65",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5630,
+            "output_tokens": 375,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000751,
+            "cost_complete": true,
+            "latency_s": 4.359569667998585
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf, p. 2, §6 Capacidad financiera y organizacional (según RUP)]"
+          ],
+          "tools_used": [
+            "get_process",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1015,
+            "output_tokens": 431,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000317,
+            "cost_complete": true,
+            "latency_s": 3.2835774140003195
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1034,
+            "output_tokens": 106,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000156,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the minimum working capital is greater than or equal to 40% of the official budget, matching the reference answer. Citations are not evaluated for this verdict."
+        },
+        {
+          "id": "q12",
+          "question": "¿Cuáles son los códigos UNSPSC de experiencia de la ALCALDIA DE FLORIDABLANCA?",
+          "expected_answer": "72101500 y 72152700",
+          "expected_sources": [
+            "14_FLO_INFRA_SA_MC_007_2025.pdf"
+          ],
+          "expected_section": "6. Experiencia del proponente",
+          "answerable": true,
+          "category": "experience",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Según el proceso FLO-INFRA-SA-MC-007-2025 de la Alcaldía de Floridablanca, la experiencia del proponente debe acreditarse con contratos clasificados en al menos uno de los códigos UNSPSC **72101500** y **72152700** [fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §6 Experiencia del proponente]. Se exigen máximo 4 contratos inscritos en el RUP, cuya suma sea igual o superior al 100 % del presupuesto oficial en SMMLV, y al menos uno debe valer el 50 % o más de ese presupuesto [fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §6 Experiencia del proponente].",
+          "citations": [
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §6 Experiencia del proponente]"
+          ],
+          "abstained": false,
+          "run_id": "8d6bdd52-f05e-490d-a622-37d1bfb0ff29",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 7519,
+            "output_tokens": 883,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.001193,
+            "cost_complete": true,
+            "latency_s": 6.18655524100177
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §6 Experiencia del proponente]",
+            "datos/secop_muestra.json",
+            "datos/empresa_multiproposito.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "search_processes",
+            "get_company_profile"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1247,
+            "output_tokens": 325,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000287,
+            "cost_complete": true,
+            "latency_s": 3.5158111009986897
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1130,
+            "output_tokens": 134,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00018,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer gives the UNSPSC codes 72101500 and 72152700, matching the reference exactly, and cites the correct source and section. The extra details about contract count and value thresholds are not contradicted by the reference and do not conflict with it."
+        },
+        {
+          "id": "q13",
+          "question": "¿Qué porcentaje se retiene de cada pago en el pliego 15?",
+          "expected_answer": "Se retendrá el 5 % de cada pago hasta la liquidación del contrato",
+          "expected_sources": [
+            "15_SA_004_2023.pdf"
+          ],
+          "expected_section": "9. Forma de pago",
+          "answerable": true,
+          "category": "payment",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "Se retiene el **5 % de cada pago** hasta la liquidación del contrato [fuente: 15_SA_004_2023.pdf, p. 2, §9 Forma de pago].\n\nInterpreté \"pliego 15\" como el documento 15_SA_004_2023.pdf (SA-004-2023, INDER Medellín), que es el número 15 de la lista de documentos indexados.",
+          "citations": [
+            "[fuente: 15_SA_004_2023.pdf, p. 2, §9 Forma de pago]"
+          ],
+          "abstained": false,
+          "run_id": "11b050f3-397a-4a12-b371-70ef711f3784",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 8454,
+            "output_tokens": 424,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.001057,
+            "cost_complete": true,
+            "latency_s": 4.904333120000956
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf, p. 2, §10 Forma de pago]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf, p. 2, §9 Forma de pago]",
+            "[fuente: 15_SA_004_2023.pdf, p. 2, §9 Forma de pago]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf, p. 2, §9 Forma de pago]",
+            "[fuente: 15_SA_004_2023.pdf, p. 2, §8 Garantías]",
+            "[fuente: 01_EDP_545_2022.pdf]",
+            "[fuente: 02_CD_55_2021_3516.pdf]",
+            "[fuente: 03_RE_CGBM_049_2024.pdf]",
+            "[fuente: 04_CD_CPS_0720_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf]",
+            "[fuente: 06_SINF_CPS_050_23.pdf]",
+            "[fuente: 07_135116.pdf]",
+            "[fuente: 08_OC10_2494_2025.pdf]",
+            "[fuente: 09_SDIS_CPS_302405_2024.pdf]",
+            "[fuente: 10_009_2021.pdf]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf]",
+            "[fuente: 12_FNV_001_2021.pdf]",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf]",
+            "[fuente: 15_SA_004_2023.pdf]",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf]",
+            "[fuente: 17_5308_SASP01_2023.pdf]",
+            "[fuente: 18_0511_2024.pdf]",
+            "[fuente: 19_CSS_297_2024.pdf]",
+            "[fuente: 20_CPS_009_2026.pdf]"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "list_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 917,
+            "output_tokens": 407,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000295,
+            "cost_complete": true,
+            "latency_s": 3.390146765999816
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 973,
+            "output_tokens": 133,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000164,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states a 5% retention on each payment until contract liquidation, matching the reference answer. The cited source and section also match the expected ones. The added note about interpreting \"pliego 15\" is a reasonable clarification and does not contradict the reference."
+        },
+        {
+          "id": "q14",
+          "question": "¿Cuál es el presupuesto oficial de la gobernacion del choco?",
+          "expected_answer": "$24.000.000 COP",
+          "expected_sources": [
+            "16_CD_PS_GDCH_186SS_2024.pdf"
+          ],
+          "expected_section": "1. Información general del proceso",
+          "answerable": true,
+          "category": "budget",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "El presupuesto oficial encontrado es de **$24.000.000 COP**, pero corresponde solo al proceso CD-PS-GDCH-186SS-2024 (contratación directa para un nutricionista de la Secretaría de Salud Departamental) [fuente: 16_CD_PS_GDCH_186SS_2024.pdf, p. 1, §1 Información general del proceso]. Esta cifra también aparece en el registro de la muestra de SECOP [fuente: datos/secop_muestra.json].\n\nNo encontré en las fuentes consultadas el presupuesto total de la Gobernación del Chocó, porque la búsqueda solo devolvió este proceso.",
+          "citations": [
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf, p. 1, §1 Información general del proceso]",
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "96258958-299a-42ac-98ec-11141ee5acd1",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5720,
+            "output_tokens": 534,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000839,
+            "cost_complete": true,
+            "latency_s": 6.01955173999886
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf, p. 1, §1 Información general del proceso]"
+          ],
+          "tools_used": [
+            "search_processes",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1113,
+            "output_tokens": 297,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00026,
+            "cost_complete": true,
+            "latency_s": 3.9528191030003654
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1062,
+            "output_tokens": 134,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000173,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the official budget of $24.000.000 COP, matching the expected answer and source section. It appropriately qualifies that this figure applies only to the specific process found, not the total departmental budget, which is consistent with the reference and not a contradiction."
+        },
+        {
+          "id": "q15",
+          "question": "¿Cuál es la fecha de la audiencia de subasta en 5308/SASP01/2023?",
+          "expected_answer": "22 de marzo de 2023",
+          "expected_sources": [
+            "17_5308_SASP01_2023.pdf"
+          ],
+          "expected_section": "3. Cronograma",
+          "answerable": true,
+          "category": "schedule",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "La audiencia de subasta de 5308/SASP01/2023 está programada para el 22 de marzo de 2023 [fuente: 17_5308_SASP01_2023.pdf, p. 1, §3 Cronograma].",
+          "citations": [
+            "[fuente: 17_5308_SASP01_2023.pdf, p. 1, §3 Cronograma]"
+          ],
+          "abstained": false,
+          "run_id": "aae20ac0-2a9a-477e-ab85-6fd21af37e60",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5562,
+            "output_tokens": 205,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000659,
+            "cost_complete": true,
+            "latency_s": 3.276381550000224
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 17_5308_SASP01_2023.pdf, p. 2, §6 Regla de adjudicación]",
+            "[fuente: 17_5308_SASP01_2023.pdf, p. 1, §3 Cronograma]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 823,
+            "output_tokens": 229,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000197,
+            "cost_complete": true,
+            "latency_s": 2.7360172199987574
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 907,
+            "output_tokens": 109,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000145,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate answer gives the auction hearing date as 22 de marzo de 2023, matching the reference answer exactly. The citation details are not evaluated for meaning here."
+        },
+        {
+          "id": "q16",
+          "question": "¿Cuál es el índice máximo de endeudamiento exigido por ESE CARMEN EMILIA OSPINA?",
+          "expected_answer": "menor o igual al 65 %",
+          "expected_sources": [
+            "18_0511_2024.pdf"
+          ],
+          "expected_section": "5. Requisitos habilitantes",
+          "answerable": true,
+          "category": "financial",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "En el proceso 0511-2024 de la ESE Carmen Emilia Ospina, el índice de endeudamiento exigido es **menor o igual al 65 %**, junto con un índice de liquidez mayor o igual a 1.2, según estados financieros a 31 de diciembre del año anterior [fuente: 18_0511_2024.pdf, p. 1, §5 Requisitos habilitantes].",
+          "citations": [
+            "[fuente: 18_0511_2024.pdf, p. 1, §5 Requisitos habilitantes]"
+          ],
+          "abstained": false,
+          "run_id": "19f8d6e4-62b2-43f7-b9f8-d77965c48999",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 5654,
+            "output_tokens": 460,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000795,
+            "cost_complete": true,
+            "latency_s": 4.7404410380004265
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 18_0511_2024.pdf, p. 1, §5 Requisitos habilitantes]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 963,
+            "output_tokens": 264,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000228,
+            "cost_complete": true,
+            "latency_s": 4.060635629000899
+          },
+          "source_accurate": true,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 976,
+            "output_tokens": 125,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00016,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The candidate states the required endeudamiento index is menor o igual al 65 %, matching the reference answer. The added liquidity requirement is extra detail not contradicting the reference, and the source citation matches the expected document and section."
+        },
+        {
+          "id": "q17",
+          "question": "¿Qué dice el pliego sobre el seguro de vida del gerente?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_requirement",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Busqué en los documentos del pliego con las expresiones \"seguro de vida del gerente\", \"seguro de vida\", \"gerente seguro póliza de vida representante legal\" y \"seguro de vida gerente\", tanto en todo el índice como en los pliegos definitivos de los procesos FDLS-LP-098-2019, LP-DT-CAU-003-2019, FLO-INFRA-SA-MC-007-2025, SA-004-2023 y 5308/SASP01/2023. Ninguna búsqueda devolvió resultados, por lo que no puedo confirmar qué exige el pliego sobre este seguro. Si me indica el proceso exacto, puedo volver a buscarlo.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "b97a35c8-b193-4866-a7d9-0b211b7016c3",
+          "metrics": {
+            "model_calls": 5,
+            "input_tokens": 21560,
+            "output_tokens": 1273,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.002792,
+            "cost_complete": true,
+            "latency_s": 10.44695353499992
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 01_EDP_545_2022.pdf]",
+            "[fuente: 02_CD_55_2021_3516.pdf]",
+            "[fuente: 03_RE_CGBM_049_2024.pdf]",
+            "[fuente: 04_CD_CPS_0720_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf]",
+            "[fuente: 06_SINF_CPS_050_23.pdf]",
+            "[fuente: 07_135116.pdf]",
+            "[fuente: 08_OC10_2494_2025.pdf]",
+            "[fuente: 09_SDIS_CPS_302405_2024.pdf]",
+            "[fuente: 10_009_2021.pdf]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf]",
+            "[fuente: 12_FNV_001_2021.pdf]",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf]",
+            "[fuente: 15_SA_004_2023.pdf]",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf]",
+            "[fuente: 17_5308_SASP01_2023.pdf]",
+            "[fuente: 18_0511_2024.pdf]",
+            "[fuente: 19_CSS_297_2024.pdf]",
+            "[fuente: 20_CPS_009_2026.pdf]"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "list_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1135,
+            "output_tokens": 281,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000254,
+            "cost_complete": true,
+            "latency_s": 2.8473781479988247
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1043,
+            "output_tokens": 123,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000166,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The reference expects an abstention (\"No lo sé\") because the question is unanswerable from the documents. The candidate answer abstains with \"No lo sé\" and explains that searches returned no results, which matches the expected behavior."
+        },
+        {
+          "id": "q18",
+          "question": "¿Cuál es la prima del seguro de vida del gerente en el proceso 11?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_requirement",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. No encontré en los documentos del proceso que pude consultar ninguna mención a una prima de seguro de vida del gerente.\n\nLo que sí pude verificar: el único documento que corresponde a un \"proceso 11\" es el pliego de condiciones definitivo FDLS-LP-098-2019 (ID CO1.REQ.848621), de la Alcaldía Local de Sumapaz [fuente: 11_FDLS_LP_098_2019.pdf]. Las búsquedas por \"seguro de vida\", \"gerente\", \"prima\" y \"póliza\" en ese proceso no devolvieron resultados. Si el \"proceso 11\" se refiere a otro expediente, indíquemelo con su referencia.",
+          "citations": [
+            "[fuente: 11_FDLS_LP_098_2019.pdf]"
+          ],
+          "abstained": true,
+          "run_id": "45e3e767-bb3c-4769-94c7-e75fac8ec263",
+          "metrics": {
+            "model_calls": 6,
+            "input_tokens": 31758,
+            "output_tokens": 1085,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.003718,
+            "cost_complete": true,
+            "latency_s": 9.528540328999952
+          },
+          "error": null,
+          "sources": [
+            "[fuente: 01_EDP_545_2022.pdf]",
+            "[fuente: 02_CD_55_2021_3516.pdf]",
+            "[fuente: 03_RE_CGBM_049_2024.pdf]",
+            "[fuente: 04_CD_CPS_0720_2026.pdf]",
+            "[fuente: 05_PS_147_2025.pdf]",
+            "[fuente: 06_SINF_CPS_050_23.pdf]",
+            "[fuente: 07_135116.pdf]",
+            "[fuente: 08_OC10_2494_2025.pdf]",
+            "[fuente: 09_SDIS_CPS_302405_2024.pdf]",
+            "[fuente: 10_009_2021.pdf]",
+            "[fuente: 11_FDLS_LP_098_2019.pdf]",
+            "[fuente: 12_FNV_001_2021.pdf]",
+            "[fuente: 13_LP_DT_CAU_003_2019.pdf]",
+            "[fuente: 14_FLO_INFRA_SA_MC_007_2025.pdf]",
+            "[fuente: 15_SA_004_2023.pdf]",
+            "[fuente: 16_CD_PS_GDCH_186SS_2024.pdf]",
+            "[fuente: 17_5308_SASP01_2023.pdf]",
+            "[fuente: 18_0511_2024.pdf]",
+            "[fuente: 19_CSS_297_2024.pdf]",
+            "[fuente: 20_CPS_009_2026.pdf]",
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "list_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1145,
+            "output_tokens": 317,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000273,
+            "cost_complete": true,
+            "latency_s": 3.9524206570022216
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 1054,
+            "output_tokens": 119,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000165,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The reference says the question is unanswerable (\"No lo sé\"). The candidate correctly abstains, stating it found no mention of a manager's life insurance premium in process 11, and does not fabricate a value."
+        },
+        {
+          "id": "q19",
+          "question": "¿Cuál es el correo electrónico del supervisor de EDP-545-2022?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_contact",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Consulté el registro del proceso EDP-545-2022 (DANE, contratación directa, prestación de servicios profesionales para procesar la información de la GEIH) y no contiene datos del supervisor [fuente: datos/secop_muestra.json]. Además, la búsqueda en los documentos del proceso no encontró ningún correo electrónico ni información sobre el supervisor [fuente: search_tender_documents]. Para obtenerlo, habría que consultar directamente el proceso en SECOP II.",
+          "citations": [
+            "[fuente: datos/secop_muestra.json]",
+            "[fuente: search_tender_documents]"
+          ],
+          "abstained": true,
+          "run_id": "1189c5ba-b21e-49e2-aed7-e728e6cd6098",
+          "metrics": {
+            "model_calls": 3,
+            "input_tokens": 8403,
+            "output_tokens": 484,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.001082,
+            "cost_complete": true,
+            "latency_s": 5.944628781999199
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_tender_documents",
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1013,
+            "output_tokens": 658,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00043,
+            "cost_complete": true,
+            "latency_s": 4.658016815999872
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 973,
+            "output_tokens": 119,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000157,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable from the data; the candidate correctly abstains (\"No lo sé\") and explains that the process record and documents contain no supervisor email. This matches the reference answer of \"No lo sé\"."
+        },
+        {
+          "id": "q20",
+          "question": "¿Cuál es la multa diaria por retraso del proceso 14?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_penalty",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "",
+          "citations": [],
+          "abstained": false,
+          "run_id": null,
+          "metrics": {
+            "model_calls": 8,
+            "input_tokens": 48112,
+            "output_tokens": 1572,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.005597,
+            "cost_complete": true,
+            "latency_s": 16.04775114899894
+          },
+          "error": "GraphRecursionError: Recursion limit of 16 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT",
+          "close_metrics": {
+            "model_calls": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.0009366369995404966
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "Operational failure; counted as incorrect"
+        },
+        {
+          "id": "q21",
+          "question": "¿Cuál es el nombre de la empresa ganadora de RE-CGBM-049-2024?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_award",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. El registro del proceso RE-CGBM-049-2024 indica que el estado es \"Evaluación\", que no está adjudicado (\"adjudicado\": \"No\") y que el nombre del proveedor figura como \"No Definido\" [fuente: datos/secop_muestra.json]. Tampoco encontré en los documentos del proceso información sobre una empresa ganadora [fuente: datos/secop_muestra.json].",
+          "citations": [
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": true,
+          "run_id": "096bfe6d-c37c-4606-8994-45ee1e1e0038",
+          "metrics": {
+            "model_calls": 3,
+            "input_tokens": 8517,
+            "output_tokens": 489,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.001096,
+            "cost_complete": true,
+            "latency_s": 5.52445355600139
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "get_process",
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 957,
+            "output_tokens": 184,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000188,
+            "cost_complete": true,
+            "latency_s": 2.7911741429998074
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 953,
+            "output_tokens": 129,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00016,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable (no awarded company). The candidate correctly abstains with \"No lo sé\" and supports it with the process status being \"Evaluación\", not adjudicated, and provider \"No Definido\", which matches the expected abstention."
+        },
+        {
+          "id": "q22",
+          "question": "¿Cuál es la capital de Francia?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "off_topic",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Mi función es responder preguntas sobre documentos de procesos de contratación de SECOP y los datos de las herramientas disponibles, y esa información no aparece en ellas ni en la memoria personal.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "6c7384b1-01e7-44bb-bcd2-f72833696745",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2153,
+            "output_tokens": 371,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000401,
+            "cost_complete": true,
+            "latency_s": 2.792247008997947
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 779,
+            "output_tokens": 239,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000197,
+            "cost_complete": true,
+            "latency_s": 2.43024873199829
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 855,
+            "output_tokens": 112,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000141,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable within the system's scope (off-topic). The candidate abstains with \"No lo sé\", matching the reference, and adds a scope explanation without fabricating facts."
+        },
+        {
+          "id": "q23",
+          "question": "¿Cómo preparo una receta de pastel de chocolate?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "off_topic",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Soy un analista de documentos de procurement de SECOP y no tengo información sobre recetas de cocina en las herramientas disponibles ni en mi memoria. Puedo ayudarte con consultas sobre procesos de contratación pública, documentos de licitaciones o el perfil financiero de la empresa.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "41e34a34-d749-4873-a0c6-7c0d7cc7cb97",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2160,
+            "output_tokens": 327,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00038,
+            "cost_complete": true,
+            "latency_s": 2.5569623980009055
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 865,
+            "output_tokens": 221,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000197,
+            "cost_complete": true,
+            "latency_s": 3.663205132997973
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 898,
+            "output_tokens": 126,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000153,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable (off-topic cooking recipe). The reference expects abstention \"No lo sé\", and the candidate abstains correctly with \"No lo sé\", adding only a harmless offer to help with procurement topics."
+        },
+        {
+          "id": "q24",
+          "question": "¿A qué distancia está la Luna de Júpiter?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "off_topic",
+          "configuration": "A-claude",
+          "model": "anthropic:claude-haiku-5-5",
+          "answer": "No lo sé. Mi función es analizar documentos de procesos de contratación pública de SECOP, y en las herramientas disponibles no hay información sobre la distancia entre la Luna y Júpiter. Puedo ayudarle con preguntas sobre procesos, requisitos o datos de la empresa registrados en esas fuentes.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "3771811f-659b-4987-b61c-164b4ed9dc0d",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2158,
+            "output_tokens": 368,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0004,
+            "cost_complete": true,
+            "latency_s": 2.7181045879988233
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 867,
+            "output_tokens": 250,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000212,
+            "cost_complete": true,
+            "latency_s": 3.116712807001022
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 899,
+            "output_tokens": 116,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000148,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable within the document scope; the reference expects an abstention (\"No lo sé\"), and the candidate correctly abstains while briefly explaining its scope without fabricating any distance."
+        }
+      ],
+      "overall": {
+        "questions": 24,
+        "answerable": 16,
+        "unanswerable": 8,
+        "errors": 1,
+        "correctness": 0.9583333333333334,
+        "source_accuracy": 0.9375,
+        "abstention_accuracy": 0.875,
+        "false_abstention_rate": 0.0,
+        "cost_usd": 0.038767,
+        "judge_cost_usd": 0.003642,
+        "input_tokens": 284611,
+        "output_tokens": 20616,
+        "mean_latency_s": 5.807615343166465,
+        "close_latency_s": 81.74753453000085
+      }
+    },
+    {
+      "configuration": "C-local",
+      "model": "ollama:qwen2.5:3b",
+      "guard": true,
+      "questions": [
+        {
+          "id": "q01",
+          "question": "¿Cuál es el presupuesto oficial de EDP-545-2022?",
+          "expected_answer": "$57.333.333 COP",
+          "expected_sources": [
+            "01_EDP_545_2022.pdf"
+          ],
+          "expected_section": "1. Información general del proceso",
+          "answerable": true,
+          "category": "budget",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "cb5f4ceb-bc9e-48b1-af07-e9248152fae4",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 2500,
+            "output_tokens": 64,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 4.3337946940009715
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 452,
+            "output_tokens": 47,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.916972311999416
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 843,
+            "output_tokens": 108,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000138,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: $57.333.333 COP), but the candidate abstained by saying it could not find the information. Abstention on an answerable question is incorrect."
+        },
+        {
+          "id": "q02",
+          "question": "¿En cuántas cuotas mensuales se paga el contrato de 02_CD_55_2021_3516.pdf?",
+          "expected_answer": "6 cuotas mensuales",
+          "expected_sources": [
+            "02_CD_55_2021_3516.pdf"
+          ],
+          "expected_section": "6. Valor y forma de pago",
+          "answerable": true,
+          "category": "payment",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "e1f9f450-36d3-445e-9330-edca4793e472",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1018,
+            "output_tokens": 5,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.15019809600198641
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 458,
+            "output_tokens": 50,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.811896210998384
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 846,
+            "output_tokens": 106,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000138,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: 6 cuotas mensuales), but the candidate abstained with \"No lo sé.\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q03",
+          "question": "¿Cuál es la fecha de cierre y entrega de ofertas de CO1.REQ.7128715?",
+          "expected_answer": "12 de noviembre de 2024",
+          "expected_sources": [
+            "03_RE_CGBM_049_2024.pdf"
+          ],
+          "expected_section": "4. Cronograma",
+          "answerable": true,
+          "category": "schedule",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "7519bc8d-78e5-495b-a141-3b9917726c44",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 2566,
+            "output_tokens": 71,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 2.5859551270004886
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 466,
+            "output_tokens": 49,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.8082390099989425
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 859,
+            "output_tokens": 106,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000139,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: 12 de noviembre de 2024), but the candidate abstained with \"No lo sé\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q04",
+          "question": "¿Cuántos meses de experiencia profesional requiere CD-CPS-0720-2026?",
+          "expected_answer": "Mínimo 36 meses de experiencia profesional",
+          "expected_sources": [
+            "04_CD_CPS_0720_2026.pdf"
+          ],
+          "expected_section": "4. Perfil e idoneidad requeridos",
+          "answerable": true,
+          "category": "experience",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "b117c519-f7d8-4583-bf9e-4da48400804c",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1008,
+            "output_tokens": 8,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.17933107199860387
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 458,
+            "output_tokens": 48,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.7740599699973245
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 870,
+            "output_tokens": 111,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000142,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: minimum 36 months of professional experience), but the candidate abstained by saying it could not find the information. Abstention on an answerable question is incorrect."
+        },
+        {
+          "id": "q05",
+          "question": "¿Se exige constitución de garantías en el proceso 5?",
+          "expected_answer": "no se exige la constitución de garantías para este contrato",
+          "expected_sources": [
+            "05_PS_147_2025.pdf"
+          ],
+          "expected_section": "7. Garantías",
+          "answerable": true,
+          "category": "guarantees",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "c51fc0aa-5698-4085-9e08-773932a8ebd6",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 2071,
+            "output_tokens": 72,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 2.3108564899994235
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 440,
+            "output_tokens": 42,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.699093499002629
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 844,
+            "output_tokens": 119,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000144,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: no se exige constitución de garantías para este contrato, section 7 Garantías), but the candidate abstained with \"No lo sé\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q06",
+          "question": "¿Qué profesional se contrata en el objeto del MUNICIPIO DE PIEDECUESTA?",
+          "expected_answer": "ingeniero civil especializado",
+          "expected_sources": [
+            "06_SINF_CPS_050_23.pdf"
+          ],
+          "expected_section": "2. Objeto",
+          "answerable": true,
+          "category": "object",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "20c21df3-5c10-42a9-819d-4dd459b52ed3",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 2061,
+            "output_tokens": 57,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.9076803160023701
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [
+            "search_tender_documents"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 450,
+            "output_tokens": 46,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.7608463450014824
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 855,
+            "output_tokens": 114,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000142,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: \"ingeniero civil especializado\", section 2. Objeto), but the candidate abstained with \"No lo sé\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q07",
+          "question": "¿Qué indica la nota sobre el presupuesto de AGROSAVIA?",
+          "expected_answer": "El presupuesto oficial registrado para este proceso es de $0",
+          "expected_sources": [
+            "07_135116.pdf"
+          ],
+          "expected_section": "8. Nota sobre el presupuesto",
+          "answerable": true,
+          "category": "budget",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "73801b6e-9c9a-4176-b349-267deeb451a9",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1000,
+            "output_tokens": 7,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.1596326949984359
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 442,
+            "output_tokens": 38,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.6368255219967978
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 857,
+            "output_tokens": 104,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000138,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: the official budget recorded is $0), but the candidate abstained with \"No lo sé\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q08",
+          "question": "¿Qué porcentaje del presupuesto debe acreditar la experiencia en contratos similares de EMPRESA SOCIAL DEL ESTADO BELLOSALUD?",
+          "expected_answer": "50 % del presupuesto oficial",
+          "expected_sources": [
+            "08_OC10_2494_2025.pdf"
+          ],
+          "expected_section": "5. Requisitos habilitantes",
+          "answerable": true,
+          "category": "experience",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "f2f6d90c-3f08-4b64-8e1c-d2a345470ddf",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 3525,
+            "output_tokens": 233,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 5.35216419200151
+          },
+          "error": null,
+          "sources": [
+            "datos/empresa_multiproposito.json"
+          ],
+          "tools_used": [
+            "get_company_profile"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 472,
+            "output_tokens": 55,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.9063584280011128
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 887,
+            "output_tokens": 111,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000144,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: 50% of the presupuesto oficial), but the candidate abstained by saying it found no such information. Abstention on an answerable question is incorrect."
+        },
+        {
+          "id": "q09",
+          "question": "¿Cuál es el índice de liquidez mínimo de FDLS-LP-098-2019?",
+          "expected_answer": "Mayor o igual a 1.6",
+          "expected_sources": [
+            "11_FDLS_LP_098_2019.pdf"
+          ],
+          "expected_section": "5. Capacidad financiera y organizacional (según RUP)",
+          "answerable": true,
+          "category": "financial",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "El índice de liquidez mínimo para el proceso FDLS-LP-098-2019 no se encuentra especificado en los datos proporcionados. Para obtener esta información, sería necesario realizar una consulta adicional que no está disponible en el conjunto de datos actual.\n\n[fuente: datos/secop_muestra.json]",
+          "citations": [
+            "[fuente: datos/secop_muestra.json]"
+          ],
+          "abstained": false,
+          "run_id": "d7ca91d2-df27-4448-ad8b-aa4d352b6bf0",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 2529,
+            "output_tokens": 101,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 2.9669734939998307
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 570,
+            "output_tokens": 97,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 1.5607739170009154
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 959,
+            "output_tokens": 118,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000155,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: índice de liquidez mínimo ≥ 1.6), but the candidate abstains, claiming the information is not available. Abstention on an answerable question is incorrect."
+        },
+        {
+          "id": "q10",
+          "question": "¿Cómo se paga el contrato de FONVIVIENDA según la forma de pago?",
+          "expected_answer": "Se pagará por demanda",
+          "expected_sources": [
+            "12_FNV_001_2021.pdf"
+          ],
+          "expected_section": "4. Valor y forma de pago",
+          "answerable": true,
+          "category": "payment",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "9d6d60c1-617e-40a1-8938-de55872fe802",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1005,
+            "output_tokens": 5,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.14854577300138772
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 432,
+            "output_tokens": 34,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.5495257100010349
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 833,
+            "output_tokens": 106,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000136,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: \"Se pagará por demanda\"), but the candidate abstained with \"No lo sé.\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q11",
+          "question": "¿Cuál es el capital de trabajo mínimo como porcentaje del presupuesto de CO1.REQ.976985?",
+          "expected_answer": "Mayor o igual al 40 % del presupuesto oficial",
+          "expected_sources": [
+            "13_LP_DT_CAU_003_2019.pdf"
+          ],
+          "expected_section": "6. Capacidad financiera y organizacional (según RUP)",
+          "answerable": true,
+          "category": "financial",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "99ede8f3-b281-4508-845a-f86983ab0264",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 2548,
+            "output_tokens": 85,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 2.7451330250005412
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "get_process"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 466,
+            "output_tokens": 94,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 1.498082948000956
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 890,
+            "output_tokens": 102,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00014,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: working capital ≥ 40% of the official budget), but the candidate abstained, which is incorrect for an answerable question."
+        },
+        {
+          "id": "q12",
+          "question": "¿Cuáles son los códigos UNSPSC de experiencia de la ALCALDIA DE FLORIDABLANCA?",
+          "expected_answer": "72101500 y 72152700",
+          "expected_sources": [
+            "14_FLO_INFRA_SA_MC_007_2025.pdf"
+          ],
+          "expected_section": "6. Experiencia del proponente",
+          "answerable": true,
+          "category": "experience",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "dc57e13e-184a-4d59-86fa-21ec99950527",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 3488,
+            "output_tokens": 111,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 3.5806667289980396
+          },
+          "error": null,
+          "sources": [
+            "datos/empresa_multiproposito.json"
+          ],
+          "tools_used": [
+            "get_company_profile"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 468,
+            "output_tokens": 50,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.8394723159981368
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 875,
+            "output_tokens": 109,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000142,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (expected codes 72101500 and 72152700), but the candidate abstained, saying the information was not found. Abstention on an answerable question is incorrect."
+        },
+        {
+          "id": "q13",
+          "question": "¿Qué porcentaje se retiene de cada pago en el pliego 15?",
+          "expected_answer": "Se retendrá el 5 % de cada pago hasta la liquidación del contrato",
+          "expected_sources": [
+            "15_SA_004_2023.pdf"
+          ],
+          "expected_section": "9. Forma de pago",
+          "answerable": true,
+          "category": "payment",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "3390f391-ae76-4cec-bba9-67f61accd5f9",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1002,
+            "output_tokens": 5,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.1493206650011416
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 426,
+            "output_tokens": 38,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.6166617310009315
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 844,
+            "output_tokens": 107,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000138,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: 5% retention until contract liquidation), but the candidate abstained with \"No lo sé.\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q14",
+          "question": "¿Cuál es el presupuesto oficial de la gobernacion del choco?",
+          "expected_answer": "$24.000.000 COP",
+          "expected_sources": [
+            "16_CD_PS_GDCH_186SS_2024.pdf"
+          ],
+          "expected_section": "1. Información general del proceso",
+          "answerable": true,
+          "category": "budget",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "8b132123-7474-4268-899c-6a92b8eb46fd",
+          "metrics": {
+            "model_calls": 2,
+            "input_tokens": 2124,
+            "output_tokens": 73,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 2.3451571369987505
+          },
+          "error": null,
+          "sources": [
+            "datos/secop_muestra.json"
+          ],
+          "tools_used": [
+            "search_processes"
+          ],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 444,
+            "output_tokens": 41,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.6729116740025347
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 853,
+            "output_tokens": 103,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000137,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: $24.000.000 COP), but the candidate abstained with \"No lo sé\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q15",
+          "question": "¿Cuál es la fecha de la audiencia de subasta en 5308/SASP01/2023?",
+          "expected_answer": "22 de marzo de 2023",
+          "expected_sources": [
+            "17_5308_SASP01_2023.pdf"
+          ],
+          "expected_section": "3. Cronograma",
+          "answerable": true,
+          "category": "schedule",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.\n[fuente: memoria]",
+          "citations": [],
+          "abstained": true,
+          "run_id": "eb92fed0-4165-4141-bde4-54d468a80724",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1013,
+            "output_tokens": 11,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.2292488700004469
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 460,
+            "output_tokens": 54,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.8231287879971205
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 848,
+            "output_tokens": 108,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000139,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (expected answer: 22 de marzo de 2023), but the candidate abstained with \"No lo sé.\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q16",
+          "question": "¿Cuál es el índice máximo de endeudamiento exigido por ESE CARMEN EMILIA OSPINA?",
+          "expected_answer": "menor o igual al 65 %",
+          "expected_sources": [
+            "18_0511_2024.pdf"
+          ],
+          "expected_section": "5. Requisitos habilitantes",
+          "answerable": true,
+          "category": "financial",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "dec607b4-0780-4313-8f50-4f03187b9284",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1009,
+            "output_tokens": 5,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.15559293800106389
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 440,
+            "output_tokens": 40,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.6395477859987295
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 844,
+            "output_tokens": 105,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000137,
+            "cost_complete": true
+          },
+          "correct": false,
+          "judge_reason": "The question is answerable (reference: menor o igual al 65 %), but the candidate abstained with \"No lo sé.\", which is incorrect for an answerable question."
+        },
+        {
+          "id": "q17",
+          "question": "¿Qué dice el pliego sobre el seguro de vida del gerente?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_requirement",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "f1e2575d-6b08-4bff-9820-788f86c17066",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 999,
+            "output_tokens": 21,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.3789856850016804
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 440,
+            "output_tokens": 39,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.6310312269997667
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 818,
+            "output_tokens": 115,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000139,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable from the documents (expected answer \"No lo sé\"), and the candidate correctly abstains with \"No lo sé: no encontré esa información en los documentos disponibles.\""
+        },
+        {
+          "id": "q18",
+          "question": "¿Cuál es la prima del seguro de vida del gerente en el proceso 11?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_requirement",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "d2f277c2-cb83-4c2e-a7d5-6522c52abb8b",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1004,
+            "output_tokens": 5,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.14239278699824354
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 430,
+            "output_tokens": 32,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.5345741269993596
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 804,
+            "output_tokens": 108,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000134,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable from the provided context, and the reference expects abstention (\"No lo sé\"). The candidate answer \"No lo sé.\" matches the reference exactly."
+        },
+        {
+          "id": "q19",
+          "question": "¿Cuál es el correo electrónico del supervisor de EDP-545-2022?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_contact",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "6754569e-7283-4b02-a70b-2b9068865204",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1006,
+            "output_tokens": 5,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.13871677799761528
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 434,
+            "output_tokens": 34,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.5528189589967951
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 803,
+            "output_tokens": 94,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000127,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable per the reference (\"No lo sé\"), and the candidate correctly abstains with \"No lo sé.\""
+        },
+        {
+          "id": "q20",
+          "question": "¿Cuál es la multa diaria por retraso del proceso 14?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_penalty",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "100c0c59-ef03-4879-8006-6726af604773",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1003,
+            "output_tokens": 5,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.1421453700022539
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 428,
+            "output_tokens": 39,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.620852924999781
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 799,
+            "output_tokens": 96,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000128,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable per the reference (expected \"No lo sé\"), and the candidate correctly abstains with \"No lo sé.\""
+        },
+        {
+          "id": "q21",
+          "question": "¿Cuál es el nombre de la empresa ganadora de RE-CGBM-049-2024?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "missing_award",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "770926f8-84c0-41ee-8f99-fc9de126d5b9",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 1010,
+            "output_tokens": 7,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.17196073500235798
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 462,
+            "output_tokens": 74,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 1.1825848720000067
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 824,
+            "output_tokens": 117,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000141,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable per the reference (expected answer \"No lo sé\", no sources). The candidate correctly abstains with \"No lo sé: no encontré esa información en los documentos disponibles.\""
+        },
+        {
+          "id": "q22",
+          "question": "¿Cuál es la capital de Francia?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "off_topic",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "5652bf54-0ae6-4d85-958e-8f9cfcc8f2d2",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 994,
+            "output_tokens": 5,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.13988667100056773
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 410,
+            "output_tokens": 23,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.3904357369974605
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 2,
+            "input_tokens": 1639,
+            "output_tokens": 294,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00031099999999999997,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable from the procurement corpus (answerable=false), and the candidate correctly abstains with \"No lo sé.\", matching the expected answer.",
+          "judge_initial": {
+            "correct": false,
+            "reason": "The question is labeled unanswerable and the reference expects abstention (\"No lo sé\"), and the candidate does abstain with \"No lo sé.\" which matches. However, the question \"¿Cuál es la capital de Francia?\" is a well-known fact (París), so treating it as unanswerable is inconsistent with reality; but judging against the reference, the candidate's abstention matches the expected answer, so the verdict should be correct.",
+            "metrics": {
+              "model_calls": 1,
+              "input_tokens": 788,
+              "output_tokens": 189,
+              "cache_read_tokens": 0,
+              "cost_usd": 0.000173,
+              "cost_complete": true
+            }
+          }
+        },
+        {
+          "id": "q23",
+          "question": "¿Cómo preparo una receta de pastel de chocolate?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "off_topic",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé: no encontré esa información en los documentos disponibles.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "4ee4af84-029b-4b2b-af7c-a65672c09a1f",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 997,
+            "output_tokens": 17,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.3373571150004864
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 436,
+            "output_tokens": 31,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.679747739002778
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 812,
+            "output_tokens": 99,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000131,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable from the documents (off-topic), and the candidate correctly abstains with \"No lo sé\", matching the expected answer."
+        },
+        {
+          "id": "q24",
+          "question": "¿A qué distancia está la Luna de Júpiter?",
+          "expected_answer": "No lo sé",
+          "expected_sources": [],
+          "expected_section": null,
+          "answerable": false,
+          "category": "off_topic",
+          "configuration": "C-local",
+          "model": "ollama:qwen2.5:3b",
+          "answer": "No lo sé.",
+          "citations": [],
+          "abstained": true,
+          "run_id": "10b3ecaf-bffb-4773-9c3d-ac1625ebef7f",
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 997,
+            "output_tokens": 5,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.2711802619996888
+          },
+          "error": null,
+          "sources": [],
+          "tools_used": [],
+          "close_metrics": {
+            "model_calls": 2,
+            "input_tokens": 416,
+            "output_tokens": 37,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.0,
+            "cost_complete": true,
+            "latency_s": 0.6826131740017445
+          },
+          "source_accurate": false,
+          "judge_metrics": {
+            "model_calls": 1,
+            "input_tokens": 793,
+            "output_tokens": 108,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000133,
+            "cost_complete": true
+          },
+          "correct": true,
+          "judge_reason": "The question is unanswerable in the given context (off-topic), the reference expects abstention (\"No lo sé\"), and the candidate answered \"No lo sé.\", which matches."
+        }
+      ],
+      "overall": {
+        "questions": 24,
+        "answerable": 16,
+        "unanswerable": 8,
+        "errors": 0,
+        "correctness": 0.3333333333333333,
+        "source_accuracy": 0.0,
+        "abstention_accuracy": 1.0,
+        "false_abstention_rate": 0.9375,
+        "cost_usd": 0.0,
+        "judge_cost_usd": 0.003493,
+        "input_tokens": 49277,
+        "output_tokens": 2115,
+        "mean_latency_s": 1.2509531965003287,
+        "close_latency_s": 18.78905492699414
+      }
+    }
+  ],
+  "langsmith": {
+    "dataset": "secop-reto2-pliegos",
+    "experiments": [
+      {
+        "configuration": "B-claude",
+        "experiment": "B-claude-7920e1c0"
+      },
+      {
+        "configuration": "A-claude",
+        "experiment": "A-claude-e8a1c83f"
+      },
+      {
+        "configuration": "C-local",
+        "experiment": "C-local-935c55db"
+      }
+    ]
+  },
+  "judge_audits": [
+    {
+      "configuration": "C-local",
+      "question_id": "q22",
+      "reason": "Initial judge verdict contradicted its explanation; one targeted re-judgment clarified corpus-defined answerability. Initial verdict and added cost retained."
+    }
+  ]
+}

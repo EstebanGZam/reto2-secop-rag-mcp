@@ -1,0 +1,1109 @@
+{
+  "generated_at": "2026-10-28T20:45:15.887925+00:00",
+  "results": [
+    {
+      "model": "anthropic:claude-haiku-5-5",
+      "documents": [
+        {
+          "source": "01_EDP_545_2022.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2845,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000494,
+            "cost_complete": true,
+            "latency_s": 7.201764108998759
+          }
+        },
+        {
+          "source": "02_CD_55_2021_3516.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": true,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2919,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000501,
+            "cost_complete": true,
+            "latency_s": 3.042216392001137
+          }
+        },
+        {
+          "source": "03_RE_CGBM_049_2024.pdf",
+          "prediction": {
+            "is_direct_contracting": false,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": false,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": true,
+            "max_experience_contracts": 1,
+            "experience_budget_pct": 50.0,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2917,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000501,
+            "cost_complete": true,
+            "latency_s": 3.870507423998788
+          }
+        },
+        {
+          "source": "04_CD_CPS_0720_2026.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2575,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000467,
+            "cost_complete": true,
+            "latency_s": 3.788947991000896
+          }
+        },
+        {
+          "source": "05_PS_147_2025.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2496,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000459,
+            "cost_complete": true,
+            "latency_s": 2.6450921920004475
+          }
+        },
+        {
+          "source": "06_SINF_CPS_050_23.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2561,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000466,
+            "cost_complete": true,
+            "latency_s": 4.206974559001537
+          }
+        },
+        {
+          "source": "07_135116.pdf",
+          "prediction": {
+            "is_direct_contracting": false,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": false,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": true,
+            "max_experience_contracts": 1,
+            "experience_budget_pct": 80.0,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2857,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000495,
+            "cost_complete": true,
+            "latency_s": 3.3796756859992456
+          }
+        },
+        {
+          "source": "08_OC10_2494_2025.pdf",
+          "prediction": {
+            "is_direct_contracting": false,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": false,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": true,
+            "max_experience_contracts": 1,
+            "experience_budget_pct": 50.0,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2789,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000488,
+            "cost_complete": true,
+            "latency_s": 2.63401220599917
+          }
+        },
+        {
+          "source": "09_SDIS_CPS_302405_2024.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2807,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.00049,
+            "cost_complete": true,
+            "latency_s": 2.8060443969989137
+          }
+        },
+        {
+          "source": "10_009_2021.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2644,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000474,
+            "cost_complete": true,
+            "latency_s": 4.166780063002079
+          }
+        },
+        {
+          "source": "11_FDLS_LP_098_2019.pdf",
+          "prediction": {
+            "is_direct_contracting": false,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": 1.6,
+            "max_debt_ratio_pct": 70.0,
+            "min_interest_coverage": 2.3,
+            "min_working_capital_budget_pct": 20.0,
+            "min_return_on_equity": 0.03,
+            "min_return_on_assets": 0.03,
+            "experience_unspsc_codes": [
+              "81101500"
+            ],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": 2,
+            "experience_budget_pct": 150.0,
+            "min_single_contract_budget_pct": 50.0
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 3133,
+            "output_tokens": 431,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000529,
+            "cost_complete": true,
+            "latency_s": 11.945566811999015
+          }
+        },
+        {
+          "source": "12_FNV_001_2021.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2535,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000463,
+            "cost_complete": true,
+            "latency_s": 14.460644478000177
+          }
+        },
+        {
+          "source": "13_LP_DT_CAU_003_2019.pdf",
+          "prediction": {
+            "is_direct_contracting": false,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": 1.5,
+            "max_debt_ratio_pct": 65.0,
+            "min_interest_coverage": 2.8,
+            "min_working_capital_budget_pct": 40.0,
+            "min_return_on_equity": 0.05,
+            "min_return_on_assets": 0.02,
+            "experience_unspsc_codes": [
+              "72141000"
+            ],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": 3,
+            "experience_budget_pct": 100.0,
+            "min_single_contract_budget_pct": 50.0
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 3308,
+            "output_tokens": 431,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000546,
+            "cost_complete": true,
+            "latency_s": 14.369140133996552
+          }
+        },
+        {
+          "source": "14_FLO_INFRA_SA_MC_007_2025.pdf",
+          "prediction": {
+            "is_direct_contracting": false,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": 1.8,
+            "max_debt_ratio_pct": 70.0,
+            "min_interest_coverage": 1.6,
+            "min_working_capital_budget_pct": 40.0,
+            "min_return_on_equity": 0.05,
+            "min_return_on_assets": 0.03,
+            "experience_unspsc_codes": [
+              "72101500",
+              "72152700"
+            ],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": 4,
+            "experience_budget_pct": 100.0,
+            "min_single_contract_budget_pct": 50.0
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 3209,
+            "output_tokens": 436,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000539,
+            "cost_complete": true,
+            "latency_s": 9.395840519999183
+          }
+        },
+        {
+          "source": "15_SA_004_2023.pdf",
+          "prediction": {
+            "is_direct_contracting": false,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": 1.8,
+            "max_debt_ratio_pct": 70.0,
+            "min_interest_coverage": 1.6,
+            "min_working_capital_budget_pct": 30.0,
+            "min_return_on_equity": 0.05,
+            "min_return_on_assets": 0.03,
+            "experience_unspsc_codes": [
+              "42192600"
+            ],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": 3,
+            "experience_budget_pct": 150.0,
+            "min_single_contract_budget_pct": 50.0
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 3220,
+            "output_tokens": 431,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000538,
+            "cost_complete": true,
+            "latency_s": 9.531449710000743
+          }
+        },
+        {
+          "source": "16_CD_PS_GDCH_186SS_2024.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2556,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000465,
+            "cost_complete": true,
+            "latency_s": 8.704178206000506
+          }
+        },
+        {
+          "source": "17_5308_SASP01_2023.pdf",
+          "prediction": {
+            "is_direct_contracting": false,
+            "is_sale_of_goods": true,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2288,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000438,
+            "cost_complete": true,
+            "latency_s": 2.6743679150022217
+          }
+        },
+        {
+          "source": "18_0511_2024.pdf",
+          "prediction": {
+            "is_direct_contracting": false,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": 1.2,
+            "max_debt_ratio_pct": 65.0,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": true,
+            "max_experience_contracts": 1,
+            "experience_budget_pct": 100.0,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2750,
+            "output_tokens": 421,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000485,
+            "cost_complete": true,
+            "latency_s": 2.8842727779992856
+          }
+        },
+        {
+          "source": "19_CSS_297_2024.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2695,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000479,
+            "cost_complete": true,
+            "latency_s": 2.582481787998404
+          }
+        },
+        {
+          "source": "20_CPS_009_2026.pdf",
+          "prediction": {
+            "is_direct_contracting": true,
+            "is_sale_of_goods": false,
+            "verifies_financial_capacity": true,
+            "min_liquidity": null,
+            "max_debt_ratio_pct": null,
+            "min_interest_coverage": null,
+            "min_working_capital_budget_pct": null,
+            "min_return_on_equity": null,
+            "min_return_on_assets": null,
+            "experience_unspsc_codes": [],
+            "experience_by_similar_object": false,
+            "max_experience_contracts": null,
+            "experience_budget_pct": null,
+            "min_single_contract_budget_pct": null
+          },
+          "error": null,
+          "metrics": {
+            "model_calls": 1,
+            "input_tokens": 2761,
+            "output_tokens": 419,
+            "cache_read_tokens": 0,
+            "cost_usd": 0.000486,
+            "cost_complete": true,
+            "latency_s": 1.898457118000806
+          }
+        }
+      ],
+      "score": {
+        "per_process": {
+          "01_EDP_545_2022.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "02_CD_55_2021_3516.pdf": {
+            "correct": 13,
+            "total": 14,
+            "accuracy": 0.9285714285714286,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": false,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "03_RE_CGBM_049_2024.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "04_CD_CPS_0720_2026.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "05_PS_147_2025.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "06_SINF_CPS_050_23.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "07_135116.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "08_OC10_2494_2025.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "09_SDIS_CPS_302405_2024.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "10_009_2021.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "11_FDLS_LP_098_2019.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "12_FNV_001_2021.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "13_LP_DT_CAU_003_2019.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "14_FLO_INFRA_SA_MC_007_2025.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "15_SA_004_2023.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "16_CD_PS_GDCH_186SS_2024.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "17_5308_SASP01_2023.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "18_0511_2024.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "19_CSS_297_2024.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          },
+          "20_CPS_009_2026.pdf": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0,
+            "fields": {
+              "is_direct_contracting": true,
+              "is_sale_of_goods": true,
+              "verifies_financial_capacity": true,
+              "min_liquidity": true,
+              "max_debt_ratio_pct": true,
+              "min_interest_coverage": true,
+              "min_working_capital_budget_pct": true,
+              "min_return_on_equity": true,
+              "min_return_on_assets": true,
+              "experience_unspsc_codes": true,
+              "experience_by_similar_object": true,
+              "max_experience_contracts": true,
+              "experience_budget_pct": true,
+              "min_single_contract_budget_pct": true
+            }
+          }
+        },
+        "overall": {
+          "correct": 279,
+          "total": 280,
+          "accuracy": 0.9964285714285714
+        },
+        "unknown_sources": []
+      },
+      "per_field": {
+        "is_direct_contracting": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "is_sale_of_goods": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "verifies_financial_capacity": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "min_liquidity": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "max_debt_ratio_pct": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "min_interest_coverage": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "min_working_capital_budget_pct": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "min_return_on_equity": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "min_return_on_assets": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "experience_unspsc_codes": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "experience_by_similar_object": {
+          "correct": 19,
+          "total": 20,
+          "accuracy": 0.95
+        },
+        "max_experience_contracts": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "experience_budget_pct": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        },
+        "min_single_contract_budget_pct": {
+          "correct": 20,
+          "total": 20,
+          "accuracy": 1.0
+        }
+      },
+      "metrics": {
+        "model_calls": 20,
+        "input_tokens": 55865,
+        "output_tokens": 8435,
+        "cost_usd": 0.009803,
+        "latency_s": 116.18841447799787
+      }
+    }
+  ],
+  "local_evaluation": "Skipped: optional local extraction deferred to keep runtime bounded"
+}
