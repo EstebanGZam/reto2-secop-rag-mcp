@@ -1,0 +1,218 @@
+[
+  {
+    "id": "q01",
+    "question": "¿Cuál es el presupuesto oficial de EDP-545-2022?",
+    "expected_answer": "$57.333.333 COP",
+    "expected_sources": ["01_EDP_545_2022.pdf"],
+    "expected_section": "1. Información general del proceso",
+    "answerable": true,
+    "category": "budget"
+  },
+  {
+    "id": "q02",
+    "question": "¿En cuántas cuotas mensuales se paga el contrato de 02_CD_55_2021_3516.pdf?",
+    "expected_answer": "6 cuotas mensuales",
+    "expected_sources": ["02_CD_55_2021_3516.pdf"],
+    "expected_section": "6. Valor y forma de pago",
+    "answerable": true,
+    "category": "payment"
+  },
+  {
+    "id": "q03",
+    "question": "¿Cuál es la fecha de cierre y entrega de ofertas de CO1.REQ.7128715?",
+    "expected_answer": "12 de noviembre de 2024",
+    "expected_sources": ["03_RE_CGBM_049_2024.pdf"],
+    "expected_section": "4. Cronograma",
+    "answerable": true,
+    "category": "schedule"
+  },
+  {
+    "id": "q04",
+    "question": "¿Cuántos meses de experiencia profesional requiere CD-CPS-0720-2026?",
+    "expected_answer": "Mínimo 36 meses de experiencia profesional",
+    "expected_sources": ["04_CD_CPS_0720_2026.pdf"],
+    "expected_section": "4. Perfil e idoneidad requeridos",
+    "answerable": true,
+    "category": "experience"
+  },
+  {
+    "id": "q05",
+    "question": "¿Se exige constitución de garantías en el proceso 5?",
+    "expected_answer": "no se exige la constitución de garantías para este contrato",
+    "expected_sources": ["05_PS_147_2025.pdf"],
+    "expected_section": "7. Garantías",
+    "answerable": true,
+    "category": "guarantees"
+  },
+  {
+    "id": "q06",
+    "question": "¿Qué profesional se contrata en el objeto del MUNICIPIO DE PIEDECUESTA?",
+    "expected_answer": "ingeniero civil especializado",
+    "expected_sources": ["06_SINF_CPS_050_23.pdf"],
+    "expected_section": "2. Objeto",
+    "answerable": true,
+    "category": "object"
+  },
+  {
+    "id": "q07",
+    "question": "¿Qué indica la nota sobre el presupuesto de AGROSAVIA?",
+    "expected_answer": "El presupuesto oficial registrado para este proceso es de $0",
+    "expected_sources": ["07_135116.pdf"],
+    "expected_section": "8. Nota sobre el presupuesto",
+    "answerable": true,
+    "category": "budget"
+  },
+  {
+    "id": "q08",
+    "question": "¿Qué porcentaje del presupuesto debe acreditar la experiencia en contratos similares de EMPRESA SOCIAL DEL ESTADO BELLOSALUD?",
+    "expected_answer": "50 % del presupuesto oficial",
+    "expected_sources": ["08_OC10_2494_2025.pdf"],
+    "expected_section": "5. Requisitos habilitantes",
+    "answerable": true,
+    "category": "experience"
+  },
+  {
+    "id": "q09",
+    "question": "¿Cuál es el índice de liquidez mínimo de FDLS-LP-098-2019?",
+    "expected_answer": "Mayor o igual a 1.6",
+    "expected_sources": ["11_FDLS_LP_098_2019.pdf"],
+    "expected_section": "5. Capacidad financiera y organizacional (según RUP)",
+    "answerable": true,
+    "category": "financial"
+  },
+  {
+    "id": "q10",
+    "question": "¿Cómo se paga el contrato de FONVIVIENDA según la forma de pago?",
+    "expected_answer": "Se pagará por demanda",
+    "expected_sources": ["12_FNV_001_2021.pdf"],
+    "expected_section": "4. Valor y forma de pago",
+    "answerable": true,
+    "category": "payment"
+  },
+  {
+    "id": "q11",
+    "question": "¿Cuál es el capital de trabajo mínimo como porcentaje del presupuesto de CO1.REQ.976985?",
+    "expected_answer": "Mayor o igual al 40 % del presupuesto oficial",
+    "expected_sources": ["13_LP_DT_CAU_003_2019.pdf"],
+    "expected_section": "6. Capacidad financiera y organizacional (según RUP)",
+    "answerable": true,
+    "category": "financial"
+  },
+  {
+    "id": "q12",
+    "question": "¿Cuáles son los códigos UNSPSC de experiencia de la ALCALDIA DE FLORIDABLANCA?",
+    "expected_answer": "72101500 y 72152700",
+    "expected_sources": ["14_FLO_INFRA_SA_MC_007_2025.pdf"],
+    "expected_section": "6. Experiencia del proponente",
+    "answerable": true,
+    "category": "experience"
+  },
+  {
+    "id": "q13",
+    "question": "¿Qué porcentaje se retiene de cada pago en el pliego 15?",
+    "expected_answer": "Se retendrá el 5 % de cada pago hasta la liquidación del contrato",
+    "expected_sources": ["15_SA_004_2023.pdf"],
+    "expected_section": "9. Forma de pago",
+    "answerable": true,
+    "category": "payment"
+  },
+  {
+    "id": "q14",
+    "question": "¿Cuál es el presupuesto oficial de la gobernacion del choco?",
+    "expected_answer": "$24.000.000 COP",
+    "expected_sources": ["16_CD_PS_GDCH_186SS_2024.pdf"],
+    "expected_section": "1. Información general del proceso",
+    "answerable": true,
+    "category": "budget"
+  },
+  {
+    "id": "q15",
+    "question": "¿Cuál es la fecha de la audiencia de subasta en 5308/SASP01/2023?",
+    "expected_answer": "22 de marzo de 2023",
+    "expected_sources": ["17_5308_SASP01_2023.pdf"],
+    "expected_section": "3. Cronograma",
+    "answerable": true,
+    "category": "schedule"
+  },
+  {
+    "id": "q16",
+    "question": "¿Cuál es el índice máximo de endeudamiento exigido por ESE CARMEN EMILIA OSPINA?",
+    "expected_answer": "menor o igual al 65 %",
+    "expected_sources": ["18_0511_2024.pdf"],
+    "expected_section": "5. Requisitos habilitantes",
+    "answerable": true,
+    "category": "financial"
+  },
+  {
+    "id": "q17",
+    "question": "¿Qué dice el pliego sobre el seguro de vida del gerente?",
+    "expected_answer": "No lo sé",
+    "expected_sources": [],
+    "expected_section": null,
+    "answerable": false,
+    "category": "missing_requirement"
+  },
+  {
+    "id": "q18",
+    "question": "¿Cuál es la prima del seguro de vida del gerente en el proceso 11?",
+    "expected_answer": "No lo sé",
+    "expected_sources": [],
+    "expected_section": null,
+    "answerable": false,
+    "category": "missing_requirement"
+  },
+  {
+    "id": "q19",
+    "question": "¿Cuál es el correo electrónico del supervisor de EDP-545-2022?",
+    "expected_answer": "No lo sé",
+    "expected_sources": [],
+    "expected_section": null,
+    "answerable": false,
+    "category": "missing_contact"
+  },
+  {
+    "id": "q20",
+    "question": "¿Cuál es la multa diaria por retraso del proceso 14?",
+    "expected_answer": "No lo sé",
+    "expected_sources": [],
+    "expected_section": null,
+    "answerable": false,
+    "category": "missing_penalty"
+  },
+  {
+    "id": "q21",
+    "question": "¿Cuál es el nombre de la empresa ganadora de RE-CGBM-049-2024?",
+    "expected_answer": "No lo sé",
+    "expected_sources": [],
+    "expected_section": null,
+    "answerable": false,
+    "category": "missing_award"
+  },
+  {
+    "id": "q22",
+    "question": "¿Cuál es la capital de Francia?",
+    "expected_answer": "No lo sé",
+    "expected_sources": [],
+    "expected_section": null,
+    "answerable": false,
+    "category": "off_topic"
+  },
+  {
+    "id": "q23",
+    "question": "¿Cómo preparo una receta de pastel de chocolate?",
+    "expected_answer": "No lo sé",
+    "expected_sources": [],
+    "expected_section": null,
+    "answerable": false,
+    "category": "off_topic"
+  },
+  {
+    "id": "q24",
+    "question": "¿A qué distancia está la Luna de Júpiter?",
+    "expected_answer": "No lo sé",
+    "expected_sources": [],
+    "expected_section": null,
+    "answerable": false,
+    "category": "off_topic"
+  }
+]
