@@ -28,9 +28,25 @@ PRICES: dict[str, tuple[float, float, float, float]] = {
 }
 
 
+# Providers whose models run on this machine (e.g. through Ollama): no per-token price.
+LOCAL_PROVIDERS = {"ollama"}
+KNOWN_PROVIDERS = {"anthropic", "openai", *LOCAL_PROVIDERS}
+# Model families served locally by Ollama in this project (response metadata has no provider prefix).
+LOCAL_MODEL_PREFIXES = ("qwen", "llama", "mistral", "gemma", "phi")
+
+
 def model_name(model: str | None) -> str:
-    """``'anthropic:claude-haiku-5-5'`` -> ``'claude-haiku-5-5'``."""
-    return str(model or "").split(":")[-1]
+    """Strip the provider prefix only: ``'anthropic:claude-haiku-5-5'`` -> ``'claude-haiku-5-5'``,
+    ``'ollama:qwen2.5:3b'`` -> ``'qwen2.5:3b'``."""
+    text = str(model or "")
+    provider, _, rest = text.partition(":")
+    return rest if rest and provider in KNOWN_PROVIDERS else text
+
+
+def is_local_model(model: str | None) -> bool:
+    """True for models executed locally (cost is zero, only latency matters)."""
+    text = str(model or "")
+    return text.partition(":")[0] in LOCAL_PROVIDERS or model_name(text).startswith(LOCAL_MODEL_PREFIXES)
 
 
 def cost_usd(
@@ -42,8 +58,10 @@ def cost_usd(
 ) -> float | None:
     """Cost of one call. ``input_tokens`` includes cache tokens, as in ``usage_metadata``.
 
-    Returns ``None`` when the model has no known price.
+    Returns ``0.0`` for local models and ``None`` when the model has no known price.
     """
+    if is_local_model(model):
+        return 0.0
     price = PRICES.get(model_name(model))
     if price is None:
         return None
