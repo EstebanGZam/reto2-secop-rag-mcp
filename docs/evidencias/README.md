@@ -1,12 +1,12 @@
-# Capturas pendientes de LangSmith
+# Capturas de LangSmith
 
-El usuario añadirá estas cuatro imágenes; no se han fabricado capturas. Las mediciones consultadas por API y los enlaces exactos están en [evidencia_langsmith.md](../../resultados/evidencia_langsmith.md).
+Tomadas de la interfaz web de LangSmith el 28/10/2026, sobre el proyecto `secop-reto2-rag-mcp` y el dataset `secop-reto2-pliegos`. Las mediciones consultadas por API y los enlaces exactos están en [evidencia_langsmith.md](../../resultados/evidencia_langsmith.md).
 
-| Archivo | Contenido que debe verse |
+| Archivo | Qué muestra |
 |---|---|
-| `langsmith_proyecto.png` | Lista del proyecto `secop-reto2-rag-mcp` con columnas de tokens, coste y latencia visibles. |
-| `langsmith_traza_citas.png` | Traza B-Claude/q01 expandida: `search_tender_documents`, `get_process` por MCP y respuesta final citada. |
-| `langsmith_traza_no_lo_se.png` | Traza B-Claude/q17 con pregunta, herramientas y respuesta «No lo sé». |
-| `langsmith_experimentos.png` | Compare con B-claude, A-claude y C-local seleccionados; mostrar sus nombres y métricas. |
+| `langsmith_proyecto.png` | Lista de trazas del proyecto con la latencia de cada ejecución y el panel de estadísticas: 661 trazas, 1.818.261 tokens, USD 0,23, latencia P50 1,58 s y P99 11,19 s. |
+| `langsmith_traza_citas.png` | Traza `secop-assistant` expandida: `get_process` (servidor MCP), `search_tender_documents` (RAG), tokens por llamada a `claude-haiku-5-5` y respuesta final con `[fuente: 01_EDP_545_2022.pdf, p. 1, §1 Información general del proceso]`. |
+| `langsmith_traza_no_lo_se.png` | Traza de la pregunta sobre el seguro de vida del gerente: las búsquedas devuelven `{"found": false}` y la respuesta empieza por «No lo sé». |
+| `langsmith_experimentos.png` | Vista *Compare* de B-claude, A-claude y C-local: corrección, precisión de fuente y abstención, y las respuestas lado a lado. Tokens y coste salen en cero porque los experimentos se publicaron desde checkpoints; el consumo real está en las trazas originales. |
 
-Usar los enlaces del informe, con una sesión autorizada de LangSmith. Los experimentos miden publicación de respuestas guardadas; para inferencia, mostrar las trazas originales. No incluir claves ni paneles de configuración de credenciales. Las imágenes se incorporan automáticamente al README mediante sus rutas relativas cuando se añadan.
+No contienen claves ni paneles de credenciales.

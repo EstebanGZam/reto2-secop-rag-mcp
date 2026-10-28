@@ -116,13 +116,21 @@ El coste local por token es cero según `secop_agent.costs`; no incluye energía
 
 [Mediciones y trazas verificadas](resultados/evidencia_langsmith.md): estadísticas del proyecto, comparación con CostCounter y enlaces a los tres experimentos y a las trazas originales. Regenerar con `uv run python scripts/langsmith_evidence.py`; requiere acceso a LangSmith y no llama al LLM. Los experimentos publican salidas desde checkpoints: su latencia de publicación no mide inferencia. Las trazas originales muestran el consumo del agente.
 
-Las cuatro capturas las añadirá el usuario siguiendo [la guía](docs/evidencias/README.md). Los enlaces siguientes quedan preparados; las imágenes aún están pendientes:
+Capturas tomadas de la interfaz de LangSmith el 28/10/2026 (detalle en [docs/evidencias](docs/evidencias/README.md)):
 
-![Proyecto LangSmith: ejecuciones con tokens, coste y latencia](docs/evidencias/langsmith_proyecto.png)
+**Proyecto `secop-reto2-rag-mcp`:** 661 trazas, 1.818.261 tokens, USD 0,23 y latencia P50 1,58 s / P99 11,19 s, con la latencia de cada ejecución.
 
-![Traza citada: búsqueda documental y herramienta MCP](docs/evidencias/langsmith_traza_citas.png)
+![Proyecto LangSmith: ejecuciones y estadísticas de tokens, coste y latencia](docs/evidencias/langsmith_proyecto.png)
+
+**Traza con cita:** el agente llama a `get_process` (servidor MCP) y a `search_tender_documents` (RAG) y responde «$57.333.333 COP» citando `01_EDP_545_2022.pdf, p. 1, §1`. Se ven los tokens de cada llamada a Claude.
+
+![Traza citada: herramienta MCP, búsqueda documental y respuesta con fuente](docs/evidencias/langsmith_traza_citas.png)
+
+**Traza «No lo sé»:** tres búsquedas devuelven `{"found": false}` y el agente se abstiene.
 
 ![Traza con abstención No lo sé](docs/evidencias/langsmith_traza_no_lo_se.png)
+
+**Comparación de experimentos** (A = B-claude, B = A-claude, C = C-local): corrección, precisión de fuente y tasa de abstención por configuración, y las respuestas lado a lado. Las gráficas de tokens y coste de esta vista salen en cero porque los experimentos se publicaron desde checkpoints; el consumo real está en las trazas originales y en [evidencia_langsmith.md](resultados/evidencia_langsmith.md).
 
 ![Comparación de los tres experimentos](docs/evidencias/langsmith_experimentos.png)
 
