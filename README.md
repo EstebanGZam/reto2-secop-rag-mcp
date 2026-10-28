@@ -2,6 +2,11 @@
 
 Entrega de Taller 02: agente en español sobre **20 pliegos simulados con fines educativos**, con citas, herramientas MCP y memoria persistente. Claude Haiku 5.5 es el asistente principal; Qwen 2.5 3B mediante Ollama se compara con el mismo corpus y herramientas.
 
+## Integrantes
+
+- Esteban Gaviria Zambrano (A00396019)
+- Julián Andrés Mendoza Castro (A00395237)
+
 | Requisito | Implementación / evidencia |
 |---|---|
 | RAG sobre 20 PDF | 157 fragmentos por sección, metadatos de proceso y citas con página |
