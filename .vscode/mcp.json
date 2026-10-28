@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "secop": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["--directory", "${workspaceFolder}", "run", "secop-mcp"]
+    },
+    "memory": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {
+        "MEMORY_FILE_PATH": "${workspaceFolder}/memoria/memory.jsonl"
+      }
+    }
+  }
+}
