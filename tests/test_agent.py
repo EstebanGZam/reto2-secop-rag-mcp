@@ -9,6 +9,8 @@ import pytest
 from langchain_core.language_models.fake_chat_models import GenericFakeChatModel
 from langchain_core.messages import AIMessage, ToolMessage
 
+from langgraph.errors import GraphRecursionError
+
 from secop_agent.agent import SecopAssistant, collect_evidence
 from secop_agent.grounding import ABSTENTION
 from secop_agent.rag import Chunk, RetrievedChunk
@@ -66,6 +68,25 @@ def test_guard_in_real_loop(guard, expected):
         mem.record_turn.assert_called_once_with("Pregunta", expected)
         await assistant.close()
         mem.close_session.assert_called_once()
+    asyncio.run(run())
+
+
+@pytest.mark.parametrize("guard", [True, False])
+def test_tool_loop_hitting_recursion_limit(guard):
+    async def run():
+        mem = memory()
+        looping = (call("search_tender_documents", {"query": "multa"}) for _ in range(50))
+        retriever = Mock()
+        retriever.search.return_value = []
+        async with SecopAssistant(chat_model=ToolChat(messages=looping), memory=mem, retriever=retriever,
+                                  mcp_client=fake_client(), use_guard=guard) as assistant:
+            if guard:
+                result = await assistant.ask("¿Multa diaria?")
+                assert result.abstained and result.answer == ABSTENTION
+                mem.record_turn.assert_called_once_with("¿Multa diaria?", ABSTENTION)
+            else:
+                with pytest.raises(GraphRecursionError):
+                    await assistant.ask("¿Multa diaria?")
     asyncio.run(run())
 
 

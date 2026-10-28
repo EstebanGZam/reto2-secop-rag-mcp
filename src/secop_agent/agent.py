@@ -14,10 +14,11 @@ from langchain.agents import create_agent
 from langchain_core.messages import AIMessage, ToolMessage
 from langchain_core.tools import tool
 from langchain_mcp_adapters.client import MultiServerMCPClient
+from langgraph.errors import GraphRecursionError
 
 from secop_agent.config import MEMORY_STORE_DIR, PROJECT_ROOT, get_settings
 from secop_agent.costs import CostCounter
-from secop_agent.grounding import guard_answer, is_abstention, parse_citations
+from secop_agent.grounding import ABSTENTION, guard_answer, is_abstention, parse_citations
 from secop_agent.llm import get_chat_model, message_text
 from secop_agent.memory import MemoryManager
 from secop_agent.rag import TenderRetriever
@@ -41,6 +42,10 @@ personal memory, start the answer exactly with 'No lo sé'. Do not guess.
 Personal details just supplied by the user can be acknowledged with [fuente: memoria].
 Answer only the question; do not add unsupported recommendations or facts.
 """
+
+
+# Maximum LangGraph steps per turn (model and tool nodes); bounds cost when the model loops.
+RECURSION_LIMIT = 16
 
 
 @dataclass(frozen=True)
@@ -214,12 +219,22 @@ class SecopAssistant:
                 personal_memory = bool(context or any(m["role"] == "user" for m in history))
                 prompt = SYSTEM_PROMPT + "\n<memory_data>\n" + context + "\n</memory_data>"
                 graph = create_agent(self.chat_model, tools=self.tools, system_prompt=prompt)
-                result = await graph.ainvoke(
-                    {"messages": [*history, {"role": "user", "content": question}]},
-                    config={"callbacks": [counter, self._counter], "run_id": run_id,
-                            "run_name": "secop-assistant", "recursion_limit": 16,
-                            "metadata": {"model": self.model, "guard": self.use_guard}},
-                )
+                try:
+                    result = await graph.ainvoke(
+                        {"messages": [*history, {"role": "user", "content": question}]},
+                        config={"callbacks": [counter, self._counter], "run_id": run_id,
+                                "run_name": "secop-assistant", "recursion_limit": RECURSION_LIMIT,
+                                "metadata": {"model": self.model, "guard": self.use_guard}},
+                    )
+                except GraphRecursionError:
+                    # A tool loop that never converges produced no grounded answer. The
+                    # prompt-only baseline keeps the raw failure so evaluations can count it.
+                    if not self.use_guard:
+                        raise
+                    await asyncio.to_thread(self.memory.record_turn, question, ABSTENTION)
+                    return AssistantAnswer(ABSTENTION, [], [], [], True,
+                                           {**counter.summary(), "latency_s": time.perf_counter() - start},
+                                           str(run_id))
                 messages = result["messages"]
                 # Input history has no tool messages; only current tool outputs qualify.
                 sources, used, found, other = collect_evidence(messages)
